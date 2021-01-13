@@ -43,10 +43,22 @@
 
 .top-menu-wrap > ul > li {
     float: left;
-    border: 1px solid #d1d1d1;
     width: 104px;
-    height: 39px;
     text-align: center;
+    position: relative;
+}
+
+.top-menu-wrap > ul > li > span {
+    position: absolute;
+    top: -19px;
+    left: 32px;
+    background: url('../img/header/spch-bubl-up.png') center top no-repeat;
+    font-size: 12px;
+    width: 43px;
+    height: 19px;
+    line-height: 25px;
+    padding-right: 3px;
+    color: #ffffff;
 }
 
 .top-menu-wrap > ul > li + li {
@@ -58,7 +70,6 @@
     line-height: 39px;
     font-weight: bold;
     color: #3e3e3e;
-    background: linear-gradient(#ffffff, #e2e2e2);
 }
 
 .top-menu-wrap::after {

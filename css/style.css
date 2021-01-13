@@ -26,3 +26,40 @@ h1 > a {
     padding-top: 54px;
     overflow: hidden;
 }
+
+.top-menu-wrap > ul > li {
+    font-size: 0;
+}
+
+.top-menu-wrap > ul > li > a {
+    padding-top: 39px;
+    overflow: hidden;
+}
+
+.top-menu-wrap > ul > li:first-child > a {
+    background: url('../img/header/all-list.png') left 0 no-repeat;
+}
+
+.top-menu-wrap > ul > li:nth-child(2) > a {
+    background: url('../img/header/hover.png') left 0 no-repeat;
+}
+
+.top-menu-wrap > ul > li:nth-child(3) > a {
+    background: url('../img/header/gwd-list.png') left 0 no-repeat;
+}
+
+.top-menu-wrap > ul > li:nth-child(4) {
+    background: url('../img/header/chj-list.png') left 0 no-repeat;
+}
+
+.top-menu-wrap > ul > li:nth-child(5) {
+    background: url('../img/header/gyj-list.png') left 0 no-repeat;
+}
+
+.top-menu-wrap > ul > li:nth-child(6) {
+    background: url('../img/header/culture-list.png') left 0 no-repeat;
+}
+
+.top-menu-wrap > ul > li:last-child {
+    background: url('../img/header/week-list.png') left 0 no-repeat;
+}

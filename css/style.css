@@ -1,0 +1,28 @@
+#header-wrap {
+    background: url('../img/header/header-left.png') left center no-repeat;
+    padding-left: 104px;
+    height: 163px;
+}
+
+.header-right {
+    background: url('../img/header/header-right.png') right center no-repeat;
+    padding-right: 103px;
+    height: 163px;
+}
+
+.header-mid {
+    background: url('../img/header/header-mid.png') left center repeat-x;
+    height: 163px;
+}
+
+h1 {
+    padding-top: 39px;
+    font-size: 0;
+    text-align: center;
+}
+
+h1 > a {
+    background: url('../img/header/penti-logo.png') center 0 no-repeat;
+    padding-top: 54px;
+    overflow: hidden;
+}

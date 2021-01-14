@@ -16,7 +16,8 @@ time, mark, audio, video {
 	border: 0;
     vertical-align: baseline;
     font-family: 'dotum', '돋움', 'Nanum Gothic', 'APPLE SD Gothic NEO', sans-serif;
-    font-size: 100%;
+	font-size: 100%;
+	box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 

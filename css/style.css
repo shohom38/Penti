@@ -63,3 +63,23 @@ h1 > a {
 .top-menu-wrap > ul > li:last-child {
     background: url('../img/header/week-list.png') left 0 no-repeat;
 }
+
+
+.n-mark::after {
+    content: url('../img/header/n-mark.png');
+}
+
+.r-mark::after {
+    content: url('../img/header/r-mark.png');
+}
+
+.rn-mark::after {
+    content: url('../img/header/rn-mark.png');
+}
+
+.rn-mark::after,
+.r-mark::after,
+.n-mark::after {
+    vertical-align: middle;
+    margin-left: 5px;
+}

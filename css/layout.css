@@ -35,6 +35,7 @@
 .top-menu-wrap {
     margin-top: 30px;
     text-align: center;
+    position: relative;
 }
 
 .top-menu-wrap > ul {
@@ -51,7 +52,7 @@
 .top-menu-wrap > ul > li > span {
     position: absolute;
     top: -19px;
-    left: 32px;
+    left: 30px;
     background: url('../img/header/spch-bubl-up.png') center top no-repeat;
     font-size: 12px;
     width: 43px;
@@ -67,7 +68,6 @@
 
 .top-menu-wrap > ul > li > a {
     display: block;
-    line-height: 39px;
     font-weight: bold;
     color: #3e3e3e;
 }
@@ -76,4 +76,22 @@
     content: "";
     display: block;
     clear: both;
+}
+
+.hover-position {
+    width: 1000px;
+    position: absolute;
+    left: -235px;
+}
+
+.top-menu-wrap::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.hover-menu {
+    font-size: 12px;
+    text-align: left;
+    float: left;
 }

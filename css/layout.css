@@ -4,7 +4,6 @@
 
 #header-wrap {
     position: relative;
-    height: 163px;
 }
 
 .top-login-wrap {
@@ -145,4 +144,69 @@
     padding-bottom: 10px;
     font-size: 14px;
     font-weight: bold;
+}
+
+#contents-wrap {
+    padding-top: 298px;
+}
+
+.notice-wrap {
+    padding: 20px 0 17px 16px;
+}
+
+.notice-wrap > ul:first-child > li:not(:first-child) {
+    font-size: 11px;
+    line-height: 16px;
+    vertical-align: middle;
+    margin-left: 7px;
+}
+
+.notice-wrap > ul > li > strong,
+.notice-wrap > ul > li > a > strong {
+    font-size: 14px;
+    vertical-align: middle;
+    color: #5d5d5d;
+}
+
+.notice-wrap > ul > li {
+    line-height: 16px;
+    float: left;
+    font-size: 0;
+}
+
+.notice-wrap > ul:first-child {
+    width: 40%;
+    float: left;
+}
+
+.notice-wrap > ul:nth-child(2) > li > a {
+    display: inline-block;
+}
+
+.notice-wrap > ul:nth-child(2) > li > a > img {
+    vertical-align: top;
+}
+
+.notice-wrap > ul > li > a + a {
+    margin-left: 8px;
+}
+
+.notice-wrap > ul:nth-child(2) > li:first-child > strong {
+    margin-right: 12px;
+}
+
+.notice-wrap > ul:nth-child(2) > li + li {
+    padding-left: 26px;
+}
+
+.notice-wrap > ul:nth-child(2)::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.notice-wrap::after {
+    content: "";
+    display: block;
+    clear: both;
 }

@@ -49,6 +49,10 @@
     position: relative;
 }
 
+.top-menu-wrap > ul > li:hover .hover-position {
+    visibility: visible;
+}
+
 .top-menu-wrap > ul > li > span {
     position: absolute;
     top: -19px;
@@ -79,12 +83,15 @@
 }
 
 .hover-position {
+    visibility: hidden;
     width: 1000px;
     position: absolute;
     left: -235px;
+    padding-top: 6px;
+    background: url('../img/header/hover-list-top-line.png') left top repeat-x;
 }
 
-.top-menu-wrap::after {
+.hover-position::after {
     content: "";
     display: block;
     clear: both;
@@ -94,4 +101,48 @@
     font-size: 12px;
     text-align: left;
     float: left;
+    width: 200px;
+    height: 292px;
+    padding-top: 20px;
+    padding-left: 5px;
+    border-top: 1px solid #302e2d;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #585858;
+    background-color: #272524;
+    color: #ffffff;
+}
+
+.hover-menu:first-child {
+    border-left: none;
+}
+
+.hover-menu:last-child {
+    border-right: none;
+}
+
+.hover-menu > dd {
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+}
+
+.hover-menu > dd > a {
+    color: #ffffff;
+}
+
+.hover-menu > dd > a:hover > span {
+    text-decoration: underline;
+}
+
+.hover-menu > dd > a:focus > span {
+    font-weight: bold;
+    background-color: #8009ef;
+    padding: 4px;
+}
+
+.hover-menu > dt {
+    padding-left: 5px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
 }

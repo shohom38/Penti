@@ -320,7 +320,7 @@
 }
 
 .pp-bg {
-    background: url('../img/contents/pp-talk.png') 0 0 no-repeat;
+    background: #800aef;
     color: #ffffff;
 }
 
@@ -329,20 +329,25 @@
 }
 
 .left-talk-wrap {
-    width: 191px;
-    height: 69px;
+    width: 176px;
+    height: 100%;
     line-height: 69px;
-    padding-left: 21px;
+    padding-left: 20px;
     font-size: 12px;
+    margin-right: 21px;
+    border-radius: 10px;
+    position: relative;
 }
 
 .right-talk-wrap {
-    width: 763px;
-    height: 237px;
-    padding-left: 21px;
-    padding: 20px 40px;
+    width: 80%;
+    height: 100%;
+    margin: 0 20px;
+    padding: 20px;
+    border-radius: 15px;
     font-size: 12px;
-    background: url('../img/contents/right-graytalk.png') 0 0 no-repeat;
+    background: #e8e8e8;
+    position: relative;
 }
 
 .left-talk-wrap > dl > dt {
@@ -369,4 +374,60 @@
     display: block;
     margin-top: 20px;
     color: #a1a1a1;
+}
+
+.left-talk-wrap::after {
+    position: absolute;
+    right: -21px;
+    bottom: -11px;
+}
+
+.pp-bg::after {
+    content: url('../img/contents/tale-pp.png');
+}
+
+.gray-bg::after {
+    content: url('../img/contents/tale-left-gray.png');
+}
+
+.right-talk-wrap::before {
+    content: url('../img/contents/tale-gray.png');
+    position: absolute;
+    left: -21px;
+    top: 19px;
+}
+
+.right-talk-wrap > h4 {
+    color: #800aef;
+}
+
+
+.right-talk-wrap > p {
+    line-height: 1.3;
+}
+
+.reply-wrap {
+    margin-top: 9px;
+}
+
+.reply-wrap > dl > .reply-wrapper > dt {
+    display: none;
+}
+
+.reply-wrap > dl::before {
+    content: url('../img/contents/re-img.png');
+}
+
+.reply-wrapper {
+    display: inline-block;
+    padding-left: 7px;
+    vertical-align: top;
+}
+
+.reply-wrap > dl > .reply-wrapper > dd:not(:last-child) {
+    display: inline-block;
+}
+
+.reply-wrapper > dd:last-child {
+    margin-top: 11px;
 }

@@ -1,5 +1,5 @@
 #wrap {
-    background-color: #fcfcfc;
+    background-color: #f1f1f1;
 }
 
 #header-wrap {
@@ -209,4 +209,135 @@
     content: "";
     display: block;
     clear: both;
+}
+
+.banner-img-area {
+    font-size: 0;
+    position: relative;
+}
+
+.pchang-label {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+
+.buyticket-wrap > form {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.buyticket-wrap > form > p {
+    font-size: 12px;
+}
+
+.buyticket-wrap > form > p:nth-child(2) {
+    font-size: 30px;
+    margin-top: 9px;
+}
+
+.buyticket-wrap > form > button {
+    margin-top: 10px;
+}
+
+.buyticket-wrap > form > p > strong > span {
+    color: #8009ef;
+}
+
+.discnt-price-wrap,
+.buyticket-wrap {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.discnt-price-wrap {
+    padding: 27px 42px 17px 40px;
+    font-size: 0;
+}
+
+.buyticket-wrap {
+    padding-left: 64px;
+    height: 135px;
+    background: url('../img/contents/big-divdr.png') left center no-repeat;
+}
+
+.hour,
+.min,
+.sec {
+    float: left;
+}
+
+.timer-wrap > div + div {
+    padding-left: 14px;
+    background: url('../img/contents/timer-divdr.png') 4px center no-repeat;
+}
+
+.review-qna-tab-wrap {
+    background: url('../img/contents/unb-qust.png') left bottom repeat-x;
+    margin-top: 25px;
+    padding-bottom: 6px;
+}
+
+.review-qna-tab-wrap > ul {
+    padding-left: 20px;
+}
+
+.review-qna-tab-wrap > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.review-qna-tab-wrap > ul > li {
+    float: left;
+    font-size: 0;
+}
+
+.review-qna-tab-wrap > ul > li > a {
+    width: 176px;
+    line-height: 37px;
+}
+
+.review-qna-tab-wrap > ul > li:first-child > a{
+    background: url('../img/contents/review-tab.png') 0 0 no-repeat;
+}
+
+.review-qna-tab-wrap > ul > li:nth-child(2) > a {
+    background: url('../img/contents/qust-tab.png') 0 0 no-repeat;
+}
+
+.review-qna-tab-wrap > ul > li:nth-child(3) > a {
+    background: url('../img/contents/comn-qust-tab.png') 0 0 no-repeat;
+}
+
+.review-qna-tab-wrap > ul > li + li {
+    margin-left: 3px;
+}
+
+.qna-talk-wrap {
+    display: flex;
+}
+
+.pp-bg {
+    background: url('../img/contents/pp-talk.png') 0 0 no-repeat;
+    color: #ffffff;
+}
+
+.gray-bg {
+    background: url('../img/contents/gray-talk.png') 0 0 no-repeat;
+}
+
+.left-talk-wrap {
+    width: 191px;
+    height: 69px;
+    line-height: 69px;
+    padding-left: 21px;
+}
+
+.right-talk-wrap {
+    padding-left: 21px;
+}
+
+.left-talk-wrap > dl > dt {
+    display: none;
 }

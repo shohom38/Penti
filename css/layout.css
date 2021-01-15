@@ -316,6 +316,7 @@
 
 .qna-talk-wrap {
     display: flex;
+    margin-top: 20px;
 }
 
 .pp-bg {
@@ -332,12 +333,40 @@
     height: 69px;
     line-height: 69px;
     padding-left: 21px;
+    font-size: 12px;
 }
 
 .right-talk-wrap {
+    width: 763px;
+    height: 237px;
     padding-left: 21px;
+    padding: 20px 40px;
+    font-size: 12px;
+    background: url('../img/contents/right-graytalk.png') 0 0 no-repeat;
 }
 
 .left-talk-wrap > dl > dt {
     display: none;
+}
+
+.del-btn {
+    background: url('../img/contents/del-btn.png') 0 0 no-repeat;
+    width: 13px;
+    height: 13px;
+    vertical-align: text-bottom;
+}
+
+.right-talk-wrap > p:nth-child(2) {
+    margin-top: 19px;
+}
+
+.right-talk-wrap > p:nth-child(3),
+.right-talk-wrap > p:nth-child(4) {
+    margin-top: 24px;
+}
+
+.right-talk-wrap > span {
+    display: block;
+    margin-top: 20px;
+    color: #a1a1a1;
 }

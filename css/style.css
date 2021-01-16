@@ -1,3 +1,7 @@
+body {
+    background: linear-gradient(transparent, #f1f1f1, #f1f1f1, #f1f1f1, #f1f1f1, #f1f1f1);
+}
+
 #header-wrap {
     background: url('../img/header/header-left.png') left center no-repeat;
     padding-left: 104px;
@@ -115,6 +119,8 @@ button {
     outline: none;
     cursor: pointer;
     font-size: 0;
+    background: none;
+    padding: 0;
 }
 
 .timer-wrap {
@@ -138,12 +144,13 @@ button {
 }
 
 .qna-wrap {
-    padding-top: 20px;
-    padding-left: 17px;
+    padding: 20px 19px;
     border: 1px solid #ececec;
     border-radius: 10px;
     margin: 30px 3px 0 3px;
     background-color: #ffffff;
+    font-size: 0;
+    box-shadow: 0 5px 5px 1px #b2b2b2;
 }
 
 .h3-wrap {
@@ -165,10 +172,154 @@ button {
     margin-top: 19px;
 }
 
+.text-area-wrap > form {
+    font-size: 0;
+    white-space: nowrap;
+}
+
+.textarea-btn {
+    height: 117px;
+    width: 141px;
+    vertical-align: top;
+    margin-left: 3px;
+    padding: 0;
+    background: url('../img/contents/reply-btn.png') 0 0 no-repeat;
+}
+
 #QnA {
     padding: 18px 16px;
-    width: 80%;
+    width: 770px;
     height: 117px;
     word-break: keep-all;
     white-space: normal;
+    box-sizing: border-box;
+    font-size: 12px;
+    border: 0;
+    outline: 0;
+    resize: none;
+}
+
+.small-btn-wrap {
+    font-size: 0;
+    margin-top: 20px;
+}
+
+.pp-btn {
+    width: 45px;
+    height: 19px;
+}
+
+.pp-btn:first-child {
+    background: url('../img/contents/reple-btn.png') 0 0 no-repeat;
+}
+
+.pp-btn:nth-child(2) {
+    background: url('../img/contents/modif-btn.png') 0 0 no-repeat;
+}
+
+.pp-btn:nth-child(3) {
+    background: url('../img/contents/delete-btn.png') 0 0 no-repeat;
+}
+
+.pp-btn + .pp-btn {
+    margin-left: 4px;
+}
+
+.howtopenti-wrap > h4 {
+    background: url('../img/contents/howtopenti.png') 0 0 no-repeat;
+    height: 30px;
+}
+
+.howtopenti-wrap > ul > li {
+    float: left;
+    vertical-align: top;
+    height: 147px;
+    position: relative;
+}
+
+.howtopenti-wrap > ul {
+    margin-top: 25px;
+}
+
+.howtopenti-wrap > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.howtopenti-wrap > ul > li:first-child {
+    width: 144px;
+    background: url('../img/contents/plz-buy-ticket.png') 0 0 no-repeat;
+}
+
+.howtopenti-wrap > ul > li:nth-child(2),
+.howtopenti-wrap > ul > li:nth-child(5) {
+    width: 166px;
+}
+
+.howtopenti-wrap > ul > li:nth-child(2) {
+    background: url('../img/contents/send-msg.png') 0 0 no-repeat;
+}
+
+.howtopenti-wrap > ul > li:nth-child(5) {
+    background: url('../img/contents/ticket-number.png') 0 0 no-repeat;
+}
+
+.howtopenti-wrap > ul > li:nth-child(3),
+.howtopenti-wrap > ul > li:nth-child(4) {
+    width: 167px;
+}
+
+.howtopenti-wrap > ul > li:nth-child(3) {
+    background: url('../img/contents/home-penti.png') 0 0 no-repeat;
+}
+
+.howtopenti-wrap > ul > li:nth-child(4) {
+    background: url('../img/contents/live-reserve.png') 0 0 no-repeat;
+}
+
+.howtopenti-wrap > ul > li:last-child {
+    width: 145px;
+    background: url('../img/contents/cplete.png') 0 0 no-repeat;
+}
+
+.howtopenti-wrap > ul > li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 8px;
+}
+
+.howtopenti-wrap > ul > li:first-child::before {
+    content: url('../img/contents/01.png');
+    left: -15px;
+}
+
+.howtopenti-wrap > ul > li:nth-child(2)::before {
+    content: url('../img/contents/02.png');
+}
+
+.howtopenti-wrap > ul > li:nth-child(3)::before {
+    content: url('../img/contents/03.png');
+}
+
+.howtopenti-wrap > ul > li:nth-child(4)::before {
+    content: url('../img/contents/04.png');
+}
+
+.howtopenti-wrap > ul > li:nth-child(5)::before {
+    content: url('../img/contents/05.png');
+}
+
+.howtopenti-wrap > ul > li:nth-child(6)::before {
+    content: url('../img/contents/06.png');
+}
+
+.howtopenti-wrap > a {
+    display: block;
+    height: 78px;
+    width: 954px;
+    background: url('../img/contents/wait-chk-reserved.png') 0 0 no-repeat;
+    margin-top: 30px;
+    box-shadow: 0 2px 4px 0 #6c6c6c;
 }

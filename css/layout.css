@@ -1,13 +1,10 @@
 #wrap {
-    background-color: #f1f1f1;
+    width: 1000px;
+    margin: 0 auto;
 }
 
 #header-wrap {
     position: relative;
-}
-
-.top-login-wrap {
-    height: 30px;
 }
 
 .top-list-wrap {
@@ -23,6 +20,16 @@
 
 .top-list-wrap > li + li {
     padding-left: 23px;
+}
+
+.top-list-wrap > li > a {
+    color: #484848;
+}
+
+.top-list-wrap > li a:hover {
+    text-decoration: underline;
+    color: #8009ef;
+    font-weight: bold;
 }
 
 .top-list-wrap::after {
@@ -82,9 +89,8 @@
 }
 
 .hover-position {
-    visibility: hidden;
     width: 1000px;
-    position: absolute;
+    position: relative;
     left: -235px;
     padding-top: 6px;
     background: url('../img/header/hover-list-top-line.png') left top repeat-x;
@@ -159,19 +165,23 @@
     line-height: 16px;
     vertical-align: middle;
     margin-left: 7px;
+    width: 84%;
 }
 
 .notice-wrap > ul > li > strong,
 .notice-wrap > ul > li > a > strong {
     font-size: 14px;
     vertical-align: middle;
-    color: #5d5d5d;
 }
 
 .notice-wrap > ul > li {
     line-height: 16px;
     float: left;
     font-size: 0;
+}
+
+.notice-wrap > ul > li > a {
+    color: #484848;
 }
 
 .notice-wrap > ul:first-child {
@@ -181,6 +191,10 @@
 
 .notice-wrap > ul:nth-child(2) > li > a {
     display: inline-block;
+}
+
+.notice-wrap > ul:nth-child(2) > li > a:hover {
+    color: #8009ef;
 }
 
 .notice-wrap > ul:nth-child(2) > li > a > img {
@@ -317,6 +331,8 @@
 .qna-talk-wrap {
     display: flex;
     margin-top: 20px;
+    padding-bottom: 21px;
+    background: url('../img/contents/talk-udbr.png') left bottom repeat-x;
 }
 
 .pp-bg {
@@ -430,4 +446,336 @@
 
 .reply-wrapper > dd:last-child {
     margin-top: 11px;
+}
+
+.numbering-wrap {
+    font-size: 0;
+    text-align: center;
+    margin-top: 23px;
+}
+
+.numbering-wrap > button {
+    vertical-align: middle;
+}
+
+.numbering-wrap > ul {
+    font-size: 12px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.numbering-wrap > ul > li {
+    float: left;
+}
+
+.numbering-wrap > ul > li:first-child {
+    margin-left: 13px;
+}
+
+.numbering-wrap > ul > li:last-child {
+    margin-right: 13px;
+}
+
+.numbering-wrap > ul > li + li {
+    margin-left: 13px;
+}
+
+.numbering-wrap > ul > li > a {
+    color: #212121;
+    font-weight: bold;
+}
+
+.chk-point-wrap {
+    padding-bottom: 34px;
+    background: url('../img/contents/chkpoint-dividr.png') left bottom no-repeat;
+}
+
+.chk-point-wrap > h3 {
+    display: inline-block;
+    width: 199px;
+    height: 61px;
+    padding-left: 27px;
+    background: url('../img/contents/checkpoint.png') 27px center no-repeat;
+}
+
+.chk-point-wrap > ul {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 44px;
+}
+
+.chk-point-wrap > ul > li {
+    float: left;
+}
+
+.chk-point-wrap > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.chkp-wrap > li {
+    vertical-align: top;
+    height: 61px;
+}
+
+.chkp-wrap > li + li {
+    margin-left: 20px;
+}
+
+.chkp-wrap > li:first-child {
+    background: url('../img/contents/parking.png') 0 0 no-repeat;
+}
+
+.chkp-wrap > li:first-child,
+.chkp-wrap > li:nth-child(2),
+.chkp-wrap > li:nth-child(3),
+.chkp-wrap > li:nth-child(4) {
+    width: 60px;
+}
+
+.chkp-wrap > li:nth-child(2) {
+    background: url('../img/contents/week.png') 0 0 no-repeat;
+}
+
+.chkp-wrap > li:nth-child(3) {
+    background: url('../img/contents/reserve.png') 0 0 no-repeat;
+}
+
+.chkp-wrap > li:nth-child(4) {
+    background: url('../img/contents/expiry-date.png') 0 0 no-repeat;
+}
+
+.chkp-wrap > li:nth-child(5),
+.chkp-wrap > li:nth-child(6),
+.chkp-wrap > li:nth-child(7) {
+    width: 66px;
+}
+
+.chkp-wrap > li:nth-child(5) {
+    background: url('../img/contents/pickup.png') 0 0 no-repeat;
+}
+
+.chkp-wrap > li:nth-child(6) {
+    background: url('../img/contents/timechng.png') 0 0 no-repeat;
+}
+
+.chkp-wrap > li:nth-child(7) {
+    background: url('../img/contents/poolspa.png') 0 0 no-repeat;
+}
+
+.chkpoint-expl-wrap {
+    font-size: 12px;
+    background: url('../img/contents/chkpoint-bg.png') 0 0 no-repeat;
+    margin-top: 10px;
+    padding-bottom: 49px;
+}
+
+.pch-condition,
+.warning-things {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.pch-condition > h4,
+.warning-things > h4 {
+    font-size: 0;
+    height: 30px;
+}
+
+.pch-condition {
+    padding-left: 27px;
+}
+
+.warning-things {
+    padding-left: 47px;
+}
+
+.pch-condition> h4 {
+    background: url('../img/contents/must-read.png') 0 0 no-repeat;
+}
+
+.pch-condition > ul + ul {
+    margin-top: 25px;
+}
+
+.warning-things> h4 {
+    background: url('../img/contents/warning-thing.png') 0 0 no-repeat;
+}
+
+.coupon-explain,
+.check-in-out-pickup,
+.must-use-coupon {
+    position: relative;
+}
+
+.coupon-explain::before,
+.check-in-out-pickup::before,
+.must-use-coupon::before {
+    content: url('../img/contents/left-dot.png');
+    position: absolute;
+    left: -27px;
+    top: -4px;
+}
+
+.coupon-explain > li {
+    height: 15px;
+    font-size: 0;
+}
+
+.coupon-explain > li + li {
+    margin-top: 6px;
+}
+
+.coupon-explain > li:first-child {
+    margin-top: 15px;
+    background: url('../img/contents/dateofuse.png') 0 0 no-repeat;
+}
+
+.coupon-explain > li:nth-child(2) {
+    background: url('../img/contents/warning.png') 0 0 no-repeat;
+}
+.coupon-explain > li:nth-child(3) {
+    background: url('../img/contents/buymaximum.png') 0 0 no-repeat;
+}
+.coupon-explain > li:nth-child(4) {
+    background: url('../img/contents/quantity.png') 0 0 no-repeat;
+}
+
+.check-in-out-pickup > li + li {
+    margin-top: 4px;
+}
+
+.check-in-out-pickup > li:not(:last-child) {
+    font-size: 0;
+    height: 14px;
+}
+
+.pch-condition > .check-in-out-pickup + .must-use-coupon {
+    margin-top: 30px;
+}
+
+.check-in-out-pickup > li:first-child {
+    background: url('../img/contents/checkin-time.png') 0 0 no-repeat;
+}
+
+.check-in-out-pickup > li:nth-child(2) {
+    background: url('../img/contents/pickup-location.png') 0 0 no-repeat;
+}
+
+.check-in-out-pickup > li:nth-child(3) {
+    background: url('../img/contents/how-to-pickup.png') 0 0 no-repeat;
+    font-size: 0;
+    height: 32px;
+}
+
+.must-use-coupon > p {
+    background: url('../img/contents/must-use-coupon.png') 0 0 no-repeat;
+    height: 68px;
+    font-size: 0;
+}
+
+.warning-things > ul > li {
+    font-size: 0;
+    height: 14px;
+}
+
+.warning-things > ul > li + li {
+    margin-top: 7px;
+}
+
+.warning-things > ul > li:first-child {
+    background: url('../img/contents/text-msg.png') 0 0 no-repeat;
+    margin-top: 15px;
+}
+
+.warning-things > ul > li:nth-child(2) {
+    background: url('../img/contents/price-ticket.png') 0 0 no-repeat;
+}
+
+.warning-things > ul > li:nth-child(3) {
+    background: url('../img/contents/add-cost.png') 0 0 no-repeat;
+}
+
+.warning-things > ul > li:nth-child(4) {
+    background: url('../img/contents/reserve-option.png') 0 0 no-repeat;
+}
+
+.warning-things > ul > li:nth-child(5) {
+    background: url('../img/contents/pay-add-cost.png') 0 0 no-repeat;
+}
+
+.warning-things > ul > li:nth-child(6) {
+    background: url('../img/contents/non-refundable.png') 0 0 no-repeat;
+}
+
+.warning-things > ul > li:nth-child(7) {
+    background: url('../img/contents/before-buy-ticket.png') 0 0 no-repeat;
+}
+
+.warning-things > ul > li:nth-child(8) {
+    background: url('../img/contents/warning-use-ticket.png') 0 0 no-repeat;
+}
+
+.diff-qna-wrap {
+    margin-top: 8px;
+    padding: 20px 18px 20px 19px;
+}
+
+#footer {
+    padding-top: 49px;
+    margin-top: 102px;
+    background-color: #e8e8e8;
+    border-top: 2px solid #d9d9d9;
+}
+
+.footer-wrap {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.footer-wrap > h2 {
+    font-size: 0;
+}
+
+.footer-wrap > h2 > a {
+    background: url('../img/footer/penti-footer-logo.png') 0 0 no-repeat;
+    width: 169px;
+    height: 54px;
+}
+
+.right-side > ul > li {
+    float: left;
+}
+
+.right-side > ul > li + li {
+    padding-left: 35px;
+    background: url('../img/footer/footer-dividr.png') 15px 2px no-repeat;
+}
+
+.right-side > ul > li > a {
+    font-size: 12px;
+    color: #484848;
+}
+
+.footer-wrap > h2 + .right-side {
+    padding-left: 26px;
+    background: url('../img/footer/footer-dividr-long.png') left 0 no-repeat;
+}
+
+.right-side > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+address {
+    margin-top: 21px;
+}
+
+address > img:nth-child(2) {
+    margin-top: 8px;
 }

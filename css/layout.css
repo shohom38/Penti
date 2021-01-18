@@ -427,6 +427,10 @@
     line-height: 1.3;
 }
 
+.indented > dl {
+    margin-left: 2em;
+}
+
 .reply-wrap {
     margin-top: 9px;
 }

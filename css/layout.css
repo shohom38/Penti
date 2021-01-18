@@ -1,6 +1,13 @@
+.ad-position {
+    position: relative;
+    width: 1260px;
+    margin: 0 auto;
+}
+
 #wrap {
     width: 1000px;
     margin: 0 auto;
+    position: relative;
 }
 
 #header-wrap {

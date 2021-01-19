@@ -582,7 +582,6 @@
 
 .chkpoint-expl-wrap {
     font-size: 12px;
-    background: url('../img/contents/chkpoint-bg.png') 0 0 no-repeat;
     margin-top: 10px;
     padding-bottom: 49px;
 }
@@ -590,6 +589,7 @@
 .pch-condition,
 .warning-things {
     width: 49%;
+    height: 333px;
     display: inline-block;
     vertical-align: top;
 }
@@ -602,10 +602,12 @@
 
 .pch-condition {
     padding-left: 27px;
+    background: url('../img/contents/explain-coupon.png') 0 42px no-repeat;
 }
 
 .warning-things {
-    padding-left: 47px;
+    height: 205px;
+    background: url('../img/contents/warning-check.png') 47px 43px no-repeat;
 }
 
 .pch-condition> h4 {
@@ -617,22 +619,13 @@
 }
 
 .warning-things> h4 {
-    background: url('../img/contents/warning-thing.png') 0 0 no-repeat;
+    background: url('../img/contents/warning-thing.png') 47px 0 no-repeat;
 }
 
 .coupon-explain,
 .check-in-out-pickup,
 .must-use-coupon {
     position: relative;
-}
-
-.coupon-explain::before,
-.check-in-out-pickup::before,
-.must-use-coupon::before {
-    content: url('../img/contents/left-dot.png');
-    position: absolute;
-    left: -27px;
-    top: -4px;
 }
 
 .coupon-explain > li {
@@ -646,24 +639,13 @@
 
 .coupon-explain > li:first-child {
     margin-top: 15px;
-    background: url('../img/contents/dateofuse.png') 0 0 no-repeat;
-}
-
-.coupon-explain > li:nth-child(2) {
-    background: url('../img/contents/warning.png') 0 0 no-repeat;
-}
-.coupon-explain > li:nth-child(3) {
-    background: url('../img/contents/buymaximum.png') 0 0 no-repeat;
-}
-.coupon-explain > li:nth-child(4) {
-    background: url('../img/contents/quantity.png') 0 0 no-repeat;
 }
 
 .check-in-out-pickup > li + li {
     margin-top: 4px;
 }
 
-.check-in-out-pickup > li:not(:last-child) {
+.check-in-out-pickup > li{
     font-size: 0;
     height: 14px;
 }
@@ -672,22 +654,7 @@
     margin-top: 30px;
 }
 
-.check-in-out-pickup > li:first-child {
-    background: url('../img/contents/checkin-time.png') 0 0 no-repeat;
-}
-
-.check-in-out-pickup > li:nth-child(2) {
-    background: url('../img/contents/pickup-location.png') 0 0 no-repeat;
-}
-
-.check-in-out-pickup > li:nth-child(3) {
-    background: url('../img/contents/how-to-pickup.png') 0 0 no-repeat;
-    font-size: 0;
-    height: 32px;
-}
-
 .must-use-coupon > p {
-    background: url('../img/contents/must-use-coupon.png') 0 0 no-repeat;
     height: 68px;
     font-size: 0;
 }
@@ -702,41 +669,14 @@
 }
 
 .warning-things > ul > li:first-child {
-    background: url('../img/contents/text-msg.png') 0 0 no-repeat;
     margin-top: 15px;
-}
-
-.warning-things > ul > li:nth-child(2) {
-    background: url('../img/contents/price-ticket.png') 0 0 no-repeat;
-}
-
-.warning-things > ul > li:nth-child(3) {
-    background: url('../img/contents/add-cost.png') 0 0 no-repeat;
-}
-
-.warning-things > ul > li:nth-child(4) {
-    background: url('../img/contents/reserve-option.png') 0 0 no-repeat;
-}
-
-.warning-things > ul > li:nth-child(5) {
-    background: url('../img/contents/pay-add-cost.png') 0 0 no-repeat;
-}
-
-.warning-things > ul > li:nth-child(6) {
-    background: url('../img/contents/non-refundable.png') 0 0 no-repeat;
-}
-
-.warning-things > ul > li:nth-child(7) {
-    background: url('../img/contents/before-buy-ticket.png') 0 0 no-repeat;
-}
-
-.warning-things > ul > li:nth-child(8) {
-    background: url('../img/contents/warning-use-ticket.png') 0 0 no-repeat;
 }
 
 .diff-qna-wrap {
     margin-top: 8px;
     padding: 20px 18px 20px 19px;
+    background: url('../img/contents/use-coupon-bg.png') 0 0 no-repeat;
+    font-size: 0;
 }
 
 #footer {

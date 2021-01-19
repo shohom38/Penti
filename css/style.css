@@ -324,15 +324,20 @@ button {
     box-shadow: 0 2px 4px 0 #6c6c6c;
 }
 
-.ad-left-wrap {
+.ad-left-wrap,
+.ad-right-wrap {
     font-size: 0;
     position: fixed;
     top: 163px;
     box-shadow: 0 5px 10px #B3B2B3;
 }
 
+.ad-right-wrap {
+    right: 0;
+}
+
 .ad-left-top {
-    background: url('../img/ad/left-ad-top.png') 0 top no-repeat;
+    background: url('../img/ad/banner-zone.png') 0 top no-repeat;
     padding-top: 41px;
 }
 

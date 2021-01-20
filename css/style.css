@@ -349,3 +349,24 @@ button {
 .ad-left-mid {
     background: url('../img/ad/left-ad-mid.png') 0 top repeat-y;
 }
+
+.up-down-btn-wrap {
+    font-size: 0;
+    background: url(../img/ad/up-down.png) 0 0 no-repeat;
+    width: 82px;
+    height: 87px;
+    position: fixed;
+    right: 40px;
+    bottom: 27px;
+}
+
+.up-wrap,
+.down-wrap {
+    width: 82px;
+    height: 50%;
+}
+
+.up-wrap > a,
+.down-wrap > a {
+    height: 100%;
+}

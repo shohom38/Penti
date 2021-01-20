@@ -352,7 +352,7 @@ button {
 
 .up-down-btn-wrap {
     font-size: 0;
-    background: url(../img/ad/up-down.png) 0 0 no-repeat;
+    background: url('../img/ad/up-down.png') 0 0 no-repeat;
     width: 82px;
     height: 87px;
     position: fixed;

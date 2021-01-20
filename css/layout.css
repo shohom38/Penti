@@ -674,8 +674,8 @@
 
 .diff-qna-wrap {
     margin-top: 8px;
-    padding: 20px 18px 20px 19px;
-    background: url('../img/contents/use-coupon-bg.png') 0 0 no-repeat;
+    padding: 20px 18px 50px 19px;
+    background: url('../img/contents/howto-use-coupon-bg.png') 0 0 no-repeat;
     font-size: 0;
 }
 
@@ -734,4 +734,8 @@ address {
 
 address > img:nth-child(2) {
     margin-top: 8px;
+}
+
+.beauty-travel-wrap {
+    margin-top: 35px;
 }

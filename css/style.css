@@ -323,3 +323,50 @@ button {
     margin-top: 30px;
     box-shadow: 0 2px 4px 0 #6c6c6c;
 }
+
+.ad-left-wrap,
+.ad-right-wrap {
+    font-size: 0;
+    position: fixed;
+    top: 163px;
+    box-shadow: 0 5px 10px #B3B2B3;
+}
+
+.ad-right-wrap {
+    right: 0;
+}
+
+.ad-left-top {
+    background: url('../img/ad/banner-zone.png') 0 top no-repeat;
+    padding-top: 41px;
+}
+
+.ad-left-bottom {
+    background: url('../img/ad/left-ad-bottom.png') 0 bottom no-repeat;
+    padding-bottom: 10px;
+}
+
+.ad-left-mid {
+    background: url('../img/ad/left-ad-mid.png') 0 top repeat-y;
+}
+
+.up-down-btn-wrap {
+    font-size: 0;
+    background: url(../img/ad/up-down.png) 0 0 no-repeat;
+    width: 82px;
+    height: 87px;
+    position: fixed;
+    right: 40px;
+    bottom: 27px;
+}
+
+.up-wrap,
+.down-wrap {
+    width: 82px;
+    height: 50%;
+}
+
+.up-wrap > a,
+.down-wrap > a {
+    height: 100%;
+}

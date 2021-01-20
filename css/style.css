@@ -226,93 +226,9 @@ button {
 }
 
 .howtopenti-wrap > h4 {
-    background: url('../img/contents/howtopenti.png') 0 0 no-repeat;
+    background: url('../img/contents/howtopenti.png') 27px 0 no-repeat;
+    margin-left: ;
     height: 30px;
-}
-
-.howtopenti-wrap > ul > li {
-    float: left;
-    vertical-align: top;
-    height: 147px;
-    position: relative;
-}
-
-.howtopenti-wrap > ul {
-    margin-top: 25px;
-}
-
-.howtopenti-wrap > ul::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.howtopenti-wrap > ul > li:first-child {
-    width: 144px;
-    background: url('../img/contents/plz-buy-ticket.png') 0 0 no-repeat;
-}
-
-.howtopenti-wrap > ul > li:nth-child(2),
-.howtopenti-wrap > ul > li:nth-child(5) {
-    width: 166px;
-}
-
-.howtopenti-wrap > ul > li:nth-child(2) {
-    background: url('../img/contents/send-msg.png') 0 0 no-repeat;
-}
-
-.howtopenti-wrap > ul > li:nth-child(5) {
-    background: url('../img/contents/ticket-number.png') 0 0 no-repeat;
-}
-
-.howtopenti-wrap > ul > li:nth-child(3),
-.howtopenti-wrap > ul > li:nth-child(4) {
-    width: 167px;
-}
-
-.howtopenti-wrap > ul > li:nth-child(3) {
-    background: url('../img/contents/home-penti.png') 0 0 no-repeat;
-}
-
-.howtopenti-wrap > ul > li:nth-child(4) {
-    background: url('../img/contents/live-reserve.png') 0 0 no-repeat;
-}
-
-.howtopenti-wrap > ul > li:last-child {
-    width: 145px;
-    background: url('../img/contents/cplete.png') 0 0 no-repeat;
-}
-
-.howtopenti-wrap > ul > li::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 8px;
-}
-
-.howtopenti-wrap > ul > li:first-child::before {
-    content: url('../img/contents/01.png');
-    left: -15px;
-}
-
-.howtopenti-wrap > ul > li:nth-child(2)::before {
-    content: url('../img/contents/02.png');
-}
-
-.howtopenti-wrap > ul > li:nth-child(3)::before {
-    content: url('../img/contents/03.png');
-}
-
-.howtopenti-wrap > ul > li:nth-child(4)::before {
-    content: url('../img/contents/04.png');
-}
-
-.howtopenti-wrap > ul > li:nth-child(5)::before {
-    content: url('../img/contents/05.png');
-}
-
-.howtopenti-wrap > ul > li:nth-child(6)::before {
-    content: url('../img/contents/06.png');
 }
 
 .howtopenti-wrap > a {
@@ -337,6 +253,11 @@ button {
 }
 
 .ad-left-top {
+    background: url('../img/ad/left-ad-top.png') 0 top no-repeat;
+    padding-top: 41px;
+}
+
+.ad-right-top {
     background: url('../img/ad/banner-zone.png') 0 top no-repeat;
     padding-top: 41px;
 }
@@ -352,7 +273,7 @@ button {
 
 .up-down-btn-wrap {
     font-size: 0;
-    background: url(../img/ad/up-down.png) 0 0 no-repeat;
+    background: url('../img/ad/up-down.png') 0 0 no-repeat;
     width: 82px;
     height: 87px;
     position: fixed;

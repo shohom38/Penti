@@ -503,81 +503,20 @@
 
 .chk-point-wrap {
     padding-bottom: 34px;
-    background: url('../img/contents/chkpoint-dividr.png') left bottom no-repeat;
 }
 
 .chk-point-wrap > h3 {
     display: inline-block;
     width: 199px;
-    height: 61px;
+    height: 103px;
     padding-left: 27px;
     background: url('../img/contents/checkpoint.png') 27px center no-repeat;
 }
 
-.chk-point-wrap > ul {
+.chkp-wrap {
     display: inline-block;
+    margin-left: 40px;
     vertical-align: top;
-    margin-left: 44px;
-}
-
-.chk-point-wrap > ul > li {
-    float: left;
-}
-
-.chk-point-wrap > ul::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.chkp-wrap > li {
-    vertical-align: top;
-    height: 61px;
-}
-
-.chkp-wrap > li + li {
-    margin-left: 20px;
-}
-
-.chkp-wrap > li:first-child {
-    background: url('../img/contents/parking.png') 0 0 no-repeat;
-}
-
-.chkp-wrap > li:first-child,
-.chkp-wrap > li:nth-child(2),
-.chkp-wrap > li:nth-child(3),
-.chkp-wrap > li:nth-child(4) {
-    width: 60px;
-}
-
-.chkp-wrap > li:nth-child(2) {
-    background: url('../img/contents/week.png') 0 0 no-repeat;
-}
-
-.chkp-wrap > li:nth-child(3) {
-    background: url('../img/contents/reserve.png') 0 0 no-repeat;
-}
-
-.chkp-wrap > li:nth-child(4) {
-    background: url('../img/contents/expiry-date.png') 0 0 no-repeat;
-}
-
-.chkp-wrap > li:nth-child(5),
-.chkp-wrap > li:nth-child(6),
-.chkp-wrap > li:nth-child(7) {
-    width: 66px;
-}
-
-.chkp-wrap > li:nth-child(5) {
-    background: url('../img/contents/pickup.png') 0 0 no-repeat;
-}
-
-.chkp-wrap > li:nth-child(6) {
-    background: url('../img/contents/timechng.png') 0 0 no-repeat;
-}
-
-.chkp-wrap > li:nth-child(7) {
-    background: url('../img/contents/poolspa.png') 0 0 no-repeat;
 }
 
 .chkpoint-expl-wrap {
@@ -659,24 +598,28 @@
     font-size: 0;
 }
 
-.warning-things > ul > li {
+.warning-wrap > ul > li {
     font-size: 0;
     height: 14px;
 }
 
-.warning-things > ul > li + li {
+.warning-wrap > ul > li + li {
     margin-top: 7px;
 }
 
-.warning-things > ul > li:first-child {
+.warning-wrap > ul > li:first-child {
     margin-top: 15px;
 }
 
 .diff-qna-wrap {
     margin-top: 8px;
-    padding: 20px 18px 20px 19px;
-    background: url('../img/contents/use-coupon-bg.png') 0 0 no-repeat;
+    padding: 0 18px 27px 19px;
+    background: url('../img/contents/howto-use-coupon-bg.png') 0 0 no-repeat;
     font-size: 0;
+}
+
+.how-to-use-penti-easier {
+    margin-top: 25px;
 }
 
 #footer {
@@ -734,4 +677,8 @@ address {
 
 address > img:nth-child(2) {
     margin-top: 8px;
+}
+
+.beauty-travel-wrap {
+    margin-top: 35px;
 }

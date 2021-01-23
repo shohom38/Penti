@@ -12,16 +12,21 @@
 <body>
     <div class="ad-position">
         <div id="wrap">
-            <header id="header-wrap">
-                <div class="header-right">
-                    <div class="header-mid">
+            <header id="header-wrap" class="no-bg-header">
+                <div class="header-right no-bg-header">
+                    <div class="header-mid no-bg-header">
+                        <h1 id="logo"><a href="#">Penti 팬션 소셜커머스 "펜티"</a></h1>
+                        <div class="menu-list-btn">
+                            <button type="button" name="menu-list-button" id="menubtn">
+                                <img src="../img/media-query/menu-btn.png" alt="메뉴버튼">
+                            </button>
+                        </div>
                         <ul class="top-list-wrap">
                             <li><a href="#">로그인</a></li>
                             <li><a href="#">회원가입</a></li>
                             <li><a href="#">고객센터</a></li>
                             <li><a href="#">마이페이지</a></li>
                         </ul>
-                        <h1 id="logo"><a href="#">Penti 팬션 소셜커머스 "펜티"</a></h1>
                         <div class="top-menu-wrap">
                             <ul>
                                 <li><a href="#">전국</a></li>
@@ -99,6 +104,26 @@
                     </div>
                 </div>
             </header>
+            <div id="slide-menu">
+                <ul>
+                    <li><a href="#">전국</a></li>
+                    <li>
+                        <a href="#">경기도</a>
+                        <ul class="inner-slide-menu">
+                            <li><a href="#">가평</a></li>
+                            <li><a href="#">남이섬</a></li>
+                            <li><a href="#">청평</a></li>
+                            <li><a href="#">양평</a></li>
+                            <li><a href="#">기타</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">강원도</a></li>
+                    <li><a href="#">충청/전라</a></li>
+                    <li><a href="#">경상/제주</a></li>
+                    <li><a href="#">레저/문화</a></li>
+                    <li><a href="#">주말/당일권</a></li>
+                </ul>
+            </div>
             <div id="contents-wrap">
                 <div class="notice-wrap">
                     <ul>
@@ -120,38 +145,34 @@
                         <li><a href="#"><img src="../img/contents/partnership.png" alt="제휴문의"></a></li>
                     </ul>
                 </div>
-                <div class="discount-wrap">
-                    <div class="discount-wrap-right">
-                        <div class="discount-wrap-mid">
-                            <div class="banner-img-area">
-                                <img class="pchang-label" src="../img/contents/pchang-lb.png" alt="강원도 평창">
-                                <img src="../img/contents/banner-img-1.png" alt="리버힐펜션 숙박권 최저가 정말 이금액이 맞아요? 감성과 휴식이 공존하는 곳.. 개인의 프라이버시 보장과 진정한 휴식으 의미가 있는 곳..">
-                                <div class="timer-wrap">
-                                    <div class="hour">
-                                        <span>1</span><span>2</span>
-                                    </div>
-                                    <div class="min">
-                                        <span>2</span><span>7</span>
-                                    </div>
-                                    <div class="sec">
-                                        <span>4</span><span>6</span>
-                                    </div>
-                                </div>
+                <div class="qna-wrap">
+                    <div class="banner-img-area">
+                        <img class="pchang-label" src="../img/contents/pchang-lb.png" alt="강원도 평창">
+                        <img src="../img/contents/banner-img-1.png" alt="리버힐펜션 숙박권 최저가 정말 이금액이 맞아요? 감성과 휴식이 공존하는 곳.. 개인의 프라이버시 보장과 진정한 휴식으 의미가 있는 곳..">
+                        <div class="timer-wrap">
+                            <div class="hour">
+                                <span>1</span><span>2</span>
                             </div>
-                            <div class="price-area">
-                                <div class="discnt-price-wrap">
-                                    <img src="../img/contents/percent.png" alt="65%">
-                                    <img src="../img/contents/discnt-price.png" alt=" 정상가격 70,000원에서 35,800원으로 할인가격">
-                                </div>
-                                <div class="buyticket-wrap">
-                                    <form action="post">
-                                        <p><strong><span>30명</span></strong>이상 뭉치면 할인시작!</p>
-                                        <p><strong>현재 구매자 <span>70</span>명</strong></p>
-                                        <button type="submit">티켓 구매하기</button>
-                                    </form>
-                                </div>    
+                            <div class="min">
+                                <span>2</span><span>7</span>
+                            </div>
+                            <div class="sec">
+                                <span>4</span><span>6</span>
                             </div>
                         </div>
+                    </div>
+                    <div class="price-area">
+                        <div class="discnt-price-wrap">
+                            <img src="../img/contents/percent.png" alt="65%">
+                            <img src="../img/contents/discnt-price.png" alt=" 정상가격 70,000원에서 35,800원으로 할인가격">
+                        </div>
+                        <div class="buyticket-wrap">
+                            <form action="post">
+                                <p><strong><span>30명</span></strong>이상 뭉치면 할인시작!</p>
+                                <p><strong>현재 구매자 <span>70</span>명</strong></p>
+                                <button type="submit">티켓 구매하기</button>
+                            </form>
+                        </div>    
                     </div>
                 </div>
                 <div class="review-qna-tab-wrap">
@@ -256,35 +277,17 @@
                         <div class="pch-condition">
                             <h4 id="pp-h4">펜티 구매조건입니다 필독!</h4>
                             <div class="coupon-explain-wrap">
-                                <ul class="coupon-explain">
-                                    <li>사용기간 : <span>2011.08.11 - 2011.09.01</span></li>
-                                    <li>유의사항 : 쿠폰번호 발송은 결제 후 실시간으로 발송해 드립니다.</li>
-                                    <li>1인당 최대 구매개수 : 5매</li>
-                                    <li>최대수량 : 800매</li>
-                                </ul>
-                                <ul class="check-in-out-pickup">
-                                    <li>입/퇴실 : 입실 오후 2시 30분, 퇴실 다음날 오전 12시</li>
-                                    <li>픽업장소 : 가평전철역, 가평터미널</li>
-                                    <li>픽업방법 : 가평역, 터미널 2시 30분 / 이외시간 할인마트픽업<br>(씨씨할인마트에서 장을 보신 분에 한하여 픽업가능)</li>
-                                </ul>
-                                <div class="must-use-coupon">
-                                    <p>펜티 할인가 적용은 펜티 쿠폰 구매 후 펜션예약시만 이루어지며,<br>펜션측과 직거래를 허용하지 않습니다.<br>만약 펜션측에서 펜티할인가로 무통장입금 유도시,<br>판매상품은 종료처리되며 할인혜택을 받지 못하는 점 유의하세요.</p>
+                                <div class="coupon-explain">
+                                    <img src="../img/contents/explain-coupon.png" alt="사용기간 : 2011.08.11 - 2011.09.01 유의사항 : 쿠폰번호 발송은 결제 후 실시간으로 발송해 드립니다. 1인당최대 구매 개수 : 5매 최대수량 : 800매">
                                 </div>
                             </div>
                         </div>
                         <div class="warning-things">
                             <h4>유의할 사항이에요!</h4>
                             <div class="warning-wrap">
-                                <ul>
-                                    <li>티켓번호는 결제 후 실시간으로 문자 발송해 드립니다.</p>
-                                    <li>본 티켓은 기준인원 금액입니다.</p>
-                                    <li>기준인원 초과시 1인 1만원의 추가비용이 발생합니다.</p>
-                                    <li>실시간예약시 옵션을 선택하실 수 있습니다.</p>
-                                    <li>옵션 선택으로 인한 추가금액은 펜션 도착 후 지불하시면 됩니다.</p>
-                                    <li><span>본 상품은 종료이후 환불이 불가능하므로 꼭 확인해 주시기바랍니다.</span></p>
-                                    <li>티켓 구매전 꼭 펜션의 유의사항을 확인하세요.</p>
-                                    <li>이용에 불편이 없도록 유의해 주시기 바랍니다.</p>
-                                </ul>
+                                <div class="warnings">
+                                    <img src="../img/contents/warning-check.png" alt="티켓번호는 결제 후 실시간으로 문자 발송해 드립니다. 본 티켓은 기준인원 금액입니다. 기준인원 초과시 1인 1만원의 추가비용이 발생합니다. 실시간예약시 옵션을 선택하실 수 있습니다. 옵션 선택으로 인한 추가금액은 펜션 도착 후 지불하시면 됩니다. 본 상품은 종료이후 환불이 불가능하므로 꼭 확인해 주시기 바랍니다. 티켓 구매전 꼭 펜션의 유의사항을 확인하세요. 이용에 불편이 없도록 유의해 주시기 바랍니다.">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -358,6 +361,26 @@
                 <address>
                     <img src="../img/footer/footer-info.png" alt="(주)인포타운(대포:차일소) . 사업자등록번호 132-25-05760 . 통신판매신고번호 제 2011-31호 . 주소 경기도 가평군 읍내1리 461-21 평화빌딩 2F 고객센터 031-581-9733 / 1600-4482 . 개인정보관리책임 이우영팀장 sensibility184@nate.com 본 사이트에 등록된 블로그 검색을 제외한 모든 자료 및 이미지의 저작권, 지적 재산권은 (주)인포타운에 있으며 무단 도용시 법쩍인 책임을 질 수 있습니다.">
                     <img src="../img/footer/copyright.png" alt="Copyright © Infotown co., Ltd. All right reserved.">
+                    <div class="address-wrap">
+                        <dl>
+                            <dt>(주)인포타운</dt>
+                            <dd>(대표:차일소)</dd>
+                            <dt>사업자등록번호</dt>
+                            <dd>132-25-05760</dd>
+                            <dt>통신판매신고번호</dt>
+                            <dd>제 2011-31호</dd>
+                            <dt>주소</dt>
+                            <dd>경기도 가평군 읍내1리 461-21 평화빌딩 2F</dd>
+                            <dt>고객센터</dt>
+                            <dd>031-581-9733 / 1600-4482</dd>
+                            <dt>개인정보관리책임</dt>
+                            <dd>이우영팀장 sensibility184@nate.com</dd>
+                        </dl>
+                        <div class="address-p-wrap">
+                            <p>본 사이트에 등록된 블로그 검색을 제외한 모든 자료 및 이미지의 저작권, 지적 재산궈은 (주)인포타운에 있으며 무단 도용시 법적인 책임을 질 수 있습니다.</p>
+                            <p>Copyright c infotown co., Ltd. All right reserved.</p>
+                        </div>
+                    </div>
                 </address>
             </div>
         </div>

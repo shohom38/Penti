@@ -277,7 +277,7 @@ button {
     height: 87px;
     position: fixed;
     right: 40px;
-    bottom: 27px;
+    bottom: 0;
 }
 
 .up-wrap,
@@ -289,4 +289,12 @@ button {
 .up-wrap > a,
 .down-wrap > a {
     height: 100%;
+}
+
+#slide-menu {
+    display: none;
+}
+
+.menu-list-btn {
+    display: none;
 }

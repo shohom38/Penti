@@ -502,7 +502,7 @@
 }
 
 .chk-point-wrap {
-    padding-bottom: 34px;
+    padding-bottom: 23px;
 }
 
 .chk-point-wrap > h3 {
@@ -533,87 +533,32 @@
     vertical-align: top;
 }
 
+.coupon-explain {
+    margin-top: 14px;
+}
+
+.warnings {
+    margin-top: 14px;
+    padding-left: 47px;
+}
+
 .pch-condition > h4,
 .warning-things > h4 {
     font-size: 0;
     height: 30px;
 }
 
-.pch-condition {
-    padding-left: 27px;
-    background: url('../img/contents/explain-coupon.png') 0 42px no-repeat;
-}
-
-.warning-things {
-    height: 205px;
-    background: url('../img/contents/warning-check.png') 47px 43px no-repeat;
-}
-
 .pch-condition> h4 {
-    background: url('../img/contents/must-read.png') 0 0 no-repeat;
-}
-
-.pch-condition > ul + ul {
-    margin-top: 25px;
+    background: url('../img/contents/must-read.png') 27px 0 no-repeat;
 }
 
 .warning-things> h4 {
     background: url('../img/contents/warning-thing.png') 47px 0 no-repeat;
 }
 
-.coupon-explain,
-.check-in-out-pickup,
-.must-use-coupon {
-    position: relative;
-}
-
-.coupon-explain > li {
-    height: 15px;
-    font-size: 0;
-}
-
-.coupon-explain > li + li {
-    margin-top: 6px;
-}
-
-.coupon-explain > li:first-child {
-    margin-top: 15px;
-}
-
-.check-in-out-pickup > li + li {
-    margin-top: 4px;
-}
-
-.check-in-out-pickup > li{
-    font-size: 0;
-    height: 14px;
-}
-
-.pch-condition > .check-in-out-pickup + .must-use-coupon {
-    margin-top: 30px;
-}
-
-.must-use-coupon > p {
-    height: 68px;
-    font-size: 0;
-}
-
-.warning-wrap > ul > li {
-    font-size: 0;
-    height: 14px;
-}
-
-.warning-wrap > ul > li + li {
-    margin-top: 7px;
-}
-
-.warning-wrap > ul > li:first-child {
-    margin-top: 15px;
-}
-
 .diff-qna-wrap {
     margin-top: 8px;
-    padding: 0 18px 27px 19px;
+    padding: 0 18px 38px 19px;
     background: url('../img/contents/howto-use-coupon-bg.png') 0 0 no-repeat;
     font-size: 0;
 }
@@ -681,4 +626,8 @@ address > img:nth-child(2) {
 
 .beauty-travel-wrap {
     margin-top: 35px;
+}
+
+.address-wrap {
+    display: none;
 }

@@ -142,6 +142,10 @@
     color: #ffffff;
 }
 
+.hover-menu > dd > a > span:first-child {
+    vertical-align: middle;
+}
+
 .hover-menu > dd > a:hover > span {
     text-decoration: underline;
 }

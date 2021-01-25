@@ -251,9 +251,9 @@ button {
     right: 0;
 }
 
-.ad-left-top {
+.ad-left-top > h3 {
     background: url('../img/ad/left-ad-top.png') 0 top no-repeat;
-    padding-top: 41px;
+    height: 41px;
 }
 
 .ad-right-top {

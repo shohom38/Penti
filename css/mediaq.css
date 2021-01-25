@@ -479,11 +479,22 @@
     }
 
     .review-qna-tab-wrap > ul > li > a {
-        background-size: contain;
         width: 90px;
         line-height: 19px;
     }
+
+    .review-qna-tab-wrap > ul > li:first-child > a {
+        background-size: contain;
+    }
     
+    .review-qna-tab-wrap > ul > li:nth-child(2) > a {
+        background-size: contain;
+    }
+
+    .review-qna-tab-wrap > ul > li:nth-child(3) > a {
+        background-size: contain;
+    }
+
     .left-talk-wrap {
         width: 100px;
         height: 100%;
@@ -536,14 +547,14 @@
     .chk-point-wrap > h3 {
         height: 25px;
         display: inline-block;
-        width: 30%;
+        width: 100%;
         background-size: contain;
         vertical-align: middle;
         background-position: 0 0;
     }
 
     .chkp-wrap {
-        width: 70%;
+        width: 100%;
         margin-left: 0;
         vertical-align: middle;
     }
@@ -568,15 +579,18 @@
     }
 
     .howtopenti-wrap > h4 {
-        height: 22px;
-        background-size: contain;
+        height: 28px;
         background-position: 0 0;
     }
 
     .howtopenti-wrap > a {
         width: 100%;
         height: 22px;
-        background-size: contain;
+        background-size: cover;
+    }
+
+    .how-to-use-penti-easier {
+        margin-top: 15px;
     }
 
     .pch-condition,
@@ -595,8 +609,7 @@
 
     .warning-things > h4,
     .pch-condition > h4 {
-        background-size: contain;
-        height: 22px;
+        height: 28px;
         background-position: 0 0;
     }
 
@@ -714,5 +727,5 @@
         margin-top: 5px;
     }
 }
-}
+
 

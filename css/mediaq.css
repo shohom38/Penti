@@ -116,13 +116,9 @@
     }
 
     .notice-wrap > ul:nth-child(2) {
-        width: 70%;
-        float: left;
+        display: none;
     }
 
-    .notice-wrap > ul:nth-child(2) > li + li {
-        padding-left: 12px;
-    }
 
     .notice-wrap > ul::after {
         content: "";
@@ -427,27 +423,34 @@
         right: 15px;
     }
 
-    .notice-wrap > ul:first-child {
-        width: 30%;
+    .notice-wrap > ul + ul {
+        margin-top: 10px;
     }
 
-    .notice-wrap > ul:first-child > li:not(:first-child) {
-        width: 70%;
+    .notice-wrap > ul:first-child {
+        width: 100%;
     }
 
     .notice-wrap > ul:nth-child(2) {
-        width: 70%;
-        float: left;
+        display: none;
     }
 
-    .notice-wrap > ul:nth-child(2) > li + li {
-        padding-left: 12px;
+    .notice-wrap > ul:nth-child(4) {
+        margin-left: 0;
+    }
+
+    .notice-wrap > ul:nth-child(4) > li + li {
+        margin-left: 12px;
     }
 
     .notice-wrap > ul::after {
         content: "";
         display: block;
         clear: both;
+    }
+
+    .notice-wrap > ul:first-child > li:not(:first-child) {
+        width: 79%;
     }
 
     .price-area {

@@ -241,12 +241,6 @@
     padding-left: 8px;
 }
 
-.notice-wrap > ul:nth-child(2)::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
 .notice-wrap::after {
     content: "";
     display: block;
@@ -268,6 +262,10 @@
     position: absolute;
     top: -20px;
     left: -20px;
+}
+
+.mq-banner-bg {
+    display: none;
 }
 
 .buyticket-wrap > form {

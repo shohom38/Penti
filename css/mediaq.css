@@ -392,11 +392,13 @@
     }
 
     #contents-wrap {
-        padding: 70px 10px 0 10px;
+        padding: 70px 10px 10px;
     }
 
     .pchang-label {
-        left: -10px;
+        width: 105px;
+        top: 0;
+        left: 0;
     }
 
     .no-bg-header {
@@ -565,6 +567,8 @@
     
     .qna-wrap {
         margin: 0;
+        border-radius: 3px;
+        box-shadow: 0 1px 5px 1px #b2b2b2;
     }
 
     .chk-point-wrap {
@@ -773,6 +777,14 @@
 
     .up-wrap, .down-wrap {
         width: 50px;
+    }
+
+    .mq-banner-bg {
+        display: block;
+    }
+
+    .banner-img-area > img:nth-child(2) {
+        display: none;
     }
 
 }

@@ -116,13 +116,9 @@
     }
 
     .notice-wrap > ul:nth-child(2) {
-        width: 70%;
-        float: left;
+        display: none;
     }
 
-    .notice-wrap > ul:nth-child(2) > li + li {
-        padding-left: 12px;
-    }
 
     .notice-wrap > ul::after {
         content: "";
@@ -427,27 +423,34 @@
         right: 15px;
     }
 
-    .notice-wrap > ul:first-child {
-        width: 30%;
+    .notice-wrap > ul + ul {
+        margin-top: 10px;
     }
 
-    .notice-wrap > ul:first-child > li:not(:first-child) {
-        width: 70%;
+    .notice-wrap > ul:first-child {
+        width: 100%;
     }
 
     .notice-wrap > ul:nth-child(2) {
-        width: 70%;
-        float: left;
+        display: none;
     }
 
-    .notice-wrap > ul:nth-child(2) > li + li {
-        padding-left: 12px;
+    .notice-wrap > ul:nth-child(4) {
+        margin-left: 0;
+    }
+
+    .notice-wrap > ul:nth-child(4) > li + li {
+        margin-left: 12px;
     }
 
     .notice-wrap > ul::after {
         content: "";
         display: block;
         clear: both;
+    }
+
+    .notice-wrap > ul:first-child > li:not(:first-child) {
+        width: 79%;
     }
 
     .price-area {
@@ -479,11 +482,22 @@
     }
 
     .review-qna-tab-wrap > ul > li > a {
-        background-size: contain;
         width: 90px;
         line-height: 19px;
     }
+
+    .review-qna-tab-wrap > ul > li:first-child > a {
+        background-size: contain;
+    }
     
+    .review-qna-tab-wrap > ul > li:nth-child(2) > a {
+        background-size: contain;
+    }
+
+    .review-qna-tab-wrap > ul > li:nth-child(3) > a {
+        background-size: contain;
+    }
+
     .left-talk-wrap {
         width: 100px;
         height: 100%;
@@ -499,15 +513,23 @@
 
     .h3-wrap > h3 {
         display: inline-block;
-        width: 150px;
     }
     
     .h3-wrap > p {
+        margin-top: 5px;
         margin-left: 0;
     }
 
+    .h3-wrap > p > img {
+        width: 100%;
+    }
+
+    .text-area-wrap {
+        padding: 5px;
+    }
+
     .text-area-wrap > form {
-        padding-right: 63px;
+        padding-right: 74px;
     }  
 
     .pp-btn {
@@ -523,6 +545,14 @@
 
     #QnA {
         width: 100%;
+        padding: 5px;
+        height: 60px;
+    }
+
+    .textarea-btn {
+        width: 71px;
+        height: 60px;
+        background-size: 100%;
     }
     
     .qna-wrap {
@@ -536,14 +566,15 @@
     .chk-point-wrap > h3 {
         height: 25px;
         display: inline-block;
-        width: 30%;
+        width: 100%;
         background-size: contain;
         vertical-align: middle;
         background-position: 0 0;
+        padding-left: 0;
     }
 
     .chkp-wrap {
-        width: 70%;
+        width: 100%;
         margin-left: 0;
         vertical-align: middle;
     }
@@ -568,15 +599,18 @@
     }
 
     .howtopenti-wrap > h4 {
-        height: 22px;
-        background-size: contain;
+        height: 28px;
         background-position: 0 0;
     }
 
     .howtopenti-wrap > a {
         width: 100%;
         height: 22px;
-        background-size: contain;
+        background-size: 100% 100%;
+    }
+
+    .how-to-use-penti-easier {
+        margin-top: 15px;
     }
 
     .pch-condition,
@@ -595,8 +629,7 @@
 
     .warning-things > h4,
     .pch-condition > h4 {
-        background-size: contain;
-        height: 22px;
+        height: 28px;
         background-position: 0 0;
     }
 
@@ -713,6 +746,14 @@
     .address-wrap > dl > dd {
         margin-top: 5px;
     }
+
+    .notice-wrap > ul:first-child {
+        width: 100%;
+    }
+
+    .notice-wrap > ul:nth-child(2) > li:first-child > strong {
+        display: none;
+    }
 }
-}
+
 

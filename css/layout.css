@@ -70,9 +70,11 @@
     position: absolute;
     top: -19px;
     left: 30px;
-    background: url('../img/header/spch-bubl-up.png') center top no-repeat;
+    background: url('../img/header/spch-bubl-up.png'), url('../img/header/spch-bubl-up.png'), url('../img/header/spch-pop-mid-2.png');
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    background-position: left 0, right 0, left 0;
     font-size: 12px;
-    width: 43px;
+    min-width: 43px;
     height: 19px;
     line-height: 25px;
     padding-right: 3px;
@@ -142,6 +144,10 @@
     color: #ffffff;
 }
 
+.hover-menu > dd > a > span:first-child {
+    vertical-align: middle;
+}
+
 .hover-menu > dd > a:hover > span {
     text-decoration: underline;
 }
@@ -167,6 +173,10 @@
     padding: 20px 0 17px 16px;
 }
 
+.notice-wrap > ul {
+    float: left;
+}
+
 .notice-wrap > ul:first-child > li:not(:first-child) {
     font-size: 11px;
     line-height: 16px;
@@ -182,7 +192,6 @@
 }
 
 .notice-wrap > ul > li {
-    line-height: 16px;
     float: left;
     font-size: 0;
 }
@@ -196,16 +205,28 @@
     float: left;
 }
 
-.notice-wrap > ul:nth-child(2) > li > a {
-    display: inline-block;
-}
-
-.notice-wrap > ul:nth-child(2) > li > a:hover {
-    color: #8009ef;
+.notice-wrap > ul:nth-child(2) > li:first-child {
+    line-height: 16px;
 }
 
 .notice-wrap > ul:nth-child(2) > li > a > img {
     vertical-align: middle;
+}
+
+.notice-wrap > ul:nth-child(4) > li > a {
+    line-height: 16px;
+}
+
+.notice-wrap > ul:nth-child(4) > li > a > img {
+    vertical-align: bottom;
+}
+
+.notice-wrap > ul:nth-child(4) {
+    margin-left: 38px;
+}
+
+.notice-wrap > ul:nth-child(4) > li + li {
+    margin-left: 28px;
 }
 
 .notice-wrap > ul > li > a + a {
@@ -216,8 +237,8 @@
     margin-right: 12px;
 }
 
-.notice-wrap > ul:nth-child(2) > li + li {
-    padding-left: 26px;
+.notice-wrap > ul:nth-child(3) > li + li {
+    padding-left: 8px;
 }
 
 .notice-wrap > ul:nth-child(2)::after {
@@ -227,6 +248,12 @@
 }
 
 .notice-wrap::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.notice-wrap > ul::after {
     content: "";
     display: block;
     clear: both;

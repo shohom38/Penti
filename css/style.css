@@ -68,24 +68,16 @@ h1 > a {
     background: url('../img/header/week-list.png') left 0 no-repeat;
 }
 
-
-.n-mark::after {
-    content: url('../img/header/n-mark.png');
-}
-
-.r-mark::after {
-    content: url('../img/header/r-mark.png');
-}
-
-.rn-mark::after {
-    content: url('../img/header/rn-mark.png');
-}
-
-.rn-mark::after,
-.r-mark::after,
-.n-mark::after {
-    vertical-align: middle;
+.n-mark {
     margin-left: 5px;
+}
+
+.r-mark,
+.n-mark {
+    font-size: 0;
+    height: 11px;
+    vertical-align: middle;
+    display: inline-block;
 }
 
 .discount-wrap {
@@ -251,9 +243,9 @@ button {
     right: 0;
 }
 
-.ad-left-top {
+.ad-left-top > h3 {
     background: url('../img/ad/left-ad-top.png') 0 top no-repeat;
-    padding-top: 41px;
+    height: 41px;
 }
 
 .ad-right-top {

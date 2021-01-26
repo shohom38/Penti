@@ -502,15 +502,27 @@
         width: 100px;
         height: 100%;
         text-align: center;
+        padding: 0 10px;
+        line-height: 30px;
+        margin-bottom: 7px;
+    }
 
+    .left-talk-wrap::after {
+        right: -1px;
+        bottom: -15px;
+        transform: rotate(90deg);
     }
 
     .right-talk-wrap {
-        width: 80%;
+        width: 100%;
         margin: 0;
         padding: 10px;
     }
 
+    .right-talk-wrap::before {
+        content: "";
+    }
+    
     .h3-wrap > h3 {
         display: inline-block;
     }
@@ -531,10 +543,6 @@
     .text-area-wrap > form {
         padding-right: 74px;
     }  
-
-    .pp-btn {
-        width: 35px;
-    }
 
     .pp-btn:first-child,
     .pp-btn:nth-child(2),
@@ -621,10 +629,6 @@
 
     .numbering-wrap > ul > li + li {
         margin-left: 12px;
-    }
-    
-    .left-talk-wrap {
-        padding: 0 10px;
     }
 
     .warning-things > h4,
@@ -754,6 +758,23 @@
     .notice-wrap > ul:nth-child(2) > li:first-child > strong {
         display: none;
     }
+
+    .qna-talk-wrap {
+        display: block;
+    }
+
+    .up-down-btn-wrap {
+        background-size: 100%;
+        width: 50px;
+        height: 50px;
+        right: 0;
+        bottom: 30px;
+    }
+
+    .up-wrap, .down-wrap {
+        width: 50px;
+    }
+
 }
 
 

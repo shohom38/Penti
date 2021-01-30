@@ -241,12 +241,6 @@
     padding-left: 8px;
 }
 
-.notice-wrap > ul:nth-child(2)::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
 .notice-wrap::after {
     content: "";
     display: block;
@@ -268,6 +262,10 @@
     position: absolute;
     top: -20px;
     left: -20px;
+}
+
+.mq-banner-bg {
+    display: none;
 }
 
 .buyticket-wrap > form {
@@ -562,11 +560,25 @@
 
 .coupon-explain {
     margin-top: 14px;
+    background: url('../img/contents/explain-coupon.png') 0 0 no-repeat;
+    width: 442px;
+    height: 269px;
+}
+
+.coupon-explain > ul,
+.coupon-explain > p {
+    font-size: 0;
 }
 
 .warnings {
     margin-top: 14px;
-    padding-left: 47px;
+    width: 427px;
+    height: 161px;
+    background: url('../img/contents/warning-check.png') 47px 0 no-repeat;
+}
+
+.warnings > p {
+    font-size: 0;
 }
 
 .pch-condition > h4,

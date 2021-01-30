@@ -227,7 +227,7 @@ button {
     height: 78px;
     width: 954px;
     background: url('../img/contents/wait-chk-reserved.png') 0 0 no-repeat;
-    margin-top: 30px;
+    margin: 30px auto 0 auto;
     box-shadow: 0 2px 4px 0 #6c6c6c;
 }
 
@@ -248,9 +248,9 @@ button {
     height: 41px;
 }
 
-.ad-right-top {
+.ad-right-top > h3 {
+    height: 41px;
     background: url('../img/ad/banner-zone.png') 0 top no-repeat;
-    padding-top: 41px;
 }
 
 .ad-left-bottom {

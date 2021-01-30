@@ -177,10 +177,18 @@
         padding-bottom: 48px;
     }
 
+    .coupon-explain {
+        width: 350px;
+        height: 202px;
+        background-size: 100%;
+    }
 
-    .coupon-explain > img,
-    .warnings > img {
-        width: 100%;
+    .warnings {
+        width: 310px;
+        height: 130px;
+        background-size: 100%;
+        background-position: 0 0;
+        margin-left: 27px;
     }
 
     .how-to-use-penti-easier > img {
@@ -190,6 +198,7 @@
     .howtopenti-wrap > h4 {
         height: 22px;
         background-size: contain;
+        margin-top: 10px;
     }
 
     .howtopenti-wrap > a {
@@ -210,8 +219,8 @@
     }
 
     .diff-qna-wrap {
-        padding:  0 18px 14px 13px;
         background-size: contain;
+        padding-bottom: 19px;
     }
 
     .black-check-bg-wrap > img {
@@ -306,6 +315,19 @@
 
     .address-wrap > dl > dd {
         margin-top: 5px;
+    }
+
+    .up-down-btn-wrap {
+        background-size: 100%;
+        width: 55px;
+        height: 55px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .up-wrap,
+    .down-wrap {
+        width: 55px;
     }
 }
 
@@ -600,12 +622,6 @@
         padding-bottom: 10px;
     }
 
-
-    .coupon-explain > img,
-    .warnings > img {
-        width: 100%;
-    }
-
     .how-to-use-penti-easier > img {
         width: 100%;
     }
@@ -643,6 +659,9 @@
 
     .coupon-explain {
         margin-top: 15px;
+        width: 300px;
+        height: 173px;
+        background-size: 100%;
     }
 
     .warning-things {
@@ -653,6 +672,10 @@
     .warnings {
         margin-top: 15px;
         padding-left: 0;
+        width: 300px;
+        height: 127px;
+        background-size: 100%;
+        background-position: 0 0;
     }
 
     .diff-qna-wrap {

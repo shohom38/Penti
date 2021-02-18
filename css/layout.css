@@ -152,7 +152,7 @@
     text-decoration: underline;
 }
 
-.hover-menu > dd > a:focus > span {
+.hover-menu > dd > a:focus > span.pentionName {
     font-weight: bold;
     background-color: #8009ef;
     padding: 4px;

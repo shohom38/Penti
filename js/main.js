@@ -1,3 +1,4 @@
+/*
 var dls = document.getElementsByClassName('hover-menu');
 var underline = document.querySelectorAll('.pentionName');
 
@@ -32,3 +33,21 @@ var countTime = setInterval(function() {
     }
 }, 1000);
 
+*/
+
+/* var pentionList01 = ['플로라', '멀리가는향기', '은가비', '리버빌', '남이섬옹달샘', '대추나무사랑걸렸네', '게스트하우스', 
+'레이크힐', '힐스토리', ' 아델하임', '모닝'];
+
+var pentionMenu = document.getElementsByClassName('hover-menu');
+
+for (i = 0 ; i < pentionList01.length ; i++) {
+    document.write('<dd>'+pentionList01[i]+'</dd>')
+}
+
+*/
+
+var dtitle = document.createElement('dt');
+
+var dtNode = document.createTextNode('가평');
+
+dtitle.appendChild(dtNode);

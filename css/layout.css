@@ -70,8 +70,8 @@
     position: absolute;
     top: -19px;
     left: 30px;
-    background: url('../img/header/spch-bubl-up.png'), url('../img/header/spch-bubl-up.png'), url('../img/header/spch-pop-mid-2.png');
-    background-repeat: no-repeat, no-repeat, repeat-x;
+    background: url('../img/header/spch-bubl-up.png'), url('../img/header/spch-bubl-up.png');
+    background-repeat: no-repeat, no-repeat;
     background-position: left 0, right 0, left 0;
     font-size: 12px;
     min-width: 43px;

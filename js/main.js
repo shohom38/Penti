@@ -46,12 +46,12 @@ var countTime = setInterval(function() {
 
     hourF.style.color = 'blue';
 
-    console.log(hourFirst);
+/*    console.log(hourFirst);
     console.log(hourSecond);
     console.log(minFirst);
     console.log(minSecond);
     console.log(hour.length);
-
+*/
     //hour.length[0].style.color = 'blue';
 
     //hourFirst.style.color = 'blue'; // why?
@@ -68,13 +68,25 @@ console.log(spanHour.length);*/
  var pentionList01 = ['플로라', '멀리가는향기', '은가비', '리버빌', '남이섬옹달샘', '대추나무사랑걸렸네', '게스트하우스', 
 '레이크힐', '힐스토리', ' 아델하임', '모닝'];
 
-var pentionMenu = document.getElementsByClassName('hover-menu');
+//var regionList01 = ['가평', '남이섬', '청평', '양평', '기타'];
+
+//var pentionMenu = document.getElementsByClassName('hover-menu');
+var addList = '';
+//var addRegion = '';
+var adddt = document.createElement('dt');
+var adddtText = document.createTextNode('가평');
 
 for (i = 0 ; i < pentionList01.length ; i++) {
     /*var dd = '<dd>'+pentionList01[i]+'</dd>';
     document.getElementById('hoverMenu01').innerHTML = dd;*/
-    document.getElementById('hoverMenu01').innerHTML = '<dd>'+pentionList01[i]+'</dd>';
+    //addRegion = '<dt>'+ regionList01[i] + '</dt>';
+    addList += '<dd>' + pentionList01[i] + '</dd>';
 }
+//document.getElementById('hoverMenu01').innerHTML = addRegion;
+
+adddt.appendChild(adddtText);
+document.getElementById('hoverMenu01').appendChild(adddt);
+//document.getElementById('hoverMenu01').innerHTML = addList;
 
 /*
 document.getElementById('hoverMenu01').innerHTML = pentionList01;

@@ -80,13 +80,13 @@ for (i = 0 ; i < pentionList01.length ; i++) {
     /*var dd = '<dd>'+pentionList01[i]+'</dd>';
     document.getElementById('hoverMenu01').innerHTML = dd;*/
     //addRegion = '<dt>'+ regionList01[i] + '</dt>';
-    addList += '<dd>' + pentionList01[i] + '</dd>';
+    addList += '<dd>' + '<a href="#">' + pentionList01[i] + '</a>' + '</dd>';
 }
 //document.getElementById('hoverMenu01').innerHTML = addRegion;
 
 adddt.appendChild(adddtText);
 document.getElementById('hoverMenu01').appendChild(adddt);
-//document.getElementById('hoverMenu01').innerHTML = addList;
+document.getElementById('hoverMenu01').innerHTML = addList; // 이게 없으면 dt가 나옴..
 
 /*
 document.getElementById('hoverMenu01').innerHTML = pentionList01;
@@ -99,4 +99,5 @@ var dtNode = document.createTextNode('가평');
 
 dtitle.appendChild(dtNode);
 */
+
 

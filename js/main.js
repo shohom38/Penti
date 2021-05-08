@@ -79,7 +79,7 @@ var addRegion = '';
 for (i = 0 ; i < pentionList01.length ; i++) {
     /*var dd = '<dd>'+pentionList01[i]+'</dd>';
     document.getElementById('hoverMenu01').innerHTML = dd;*/
-    addList += '<dd>' + '<a href="#">' + '<span>' + pentionList01[i] + '</span>' + '</a>' + '</dd>';
+    addList += '<dd>' + '<a href="#">' + '<span class="pentionName">' + pentionList01[i] + '</span>' + '</a>' + '</dd>';
 };
 
 for (i = 0; i <regionList01.length; i++) {
@@ -112,3 +112,4 @@ document.getElementById('hoverMenu01').innerHTML = Pention1.region + Pention1.pe
 // document.getElementById('hoverMenu01').innerHTML = Pention1.pentionName;
 
 var New = '<span class="r-mark"><img src="../img/header/r-mark.png" alt="renew"></span>';
+

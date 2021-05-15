@@ -65,29 +65,88 @@ var spanHour = hours.getElementsByTagName('span');
 
 console.log(spanHour.length);*/
 
-var regionList01 = ['가평', '남이섬', '청평', '양평', '기타'];
-var pentionList01 = ['플로라', '멀리가는향기', '은가비', '리버빌', '남이섬옹달샘', '대추나무사랑걸렸네', '게스트하우스', 
-'레이크힐', '힐스토리', ' 아델하임', '모닝'];
+// var regionList01 = ['가평', '남이섬', '청평', '양평', '기타'];
+// var pentionList01 = ['플로라', '멀리가는향기', '은가비', '리버빌', '남이섬옹달샘', '대추나무사랑걸렸네', '게스트하우스', 
+// '레이크힐', '힐스토리', ' 아델하임', '모닝'];
+// var pentionList02 = ['플로라', '멀리가는향기', '은가비', '리버빌', '남이섬옹달샘', '대추나무사랑걸렸네', '게스트하우스', 
+// '레이크힐', '힐스토리', ' 아델하임'];
+// var pentionList03 = ['플로라', '멀리가는향기', '은가비', '리버빌', '남이섬옹달샘', '대추나무사랑걸렸네'];
+// var pentionList04 = ['플로라', '멀리가는향기', '은가비', '리버빌', '남이섬옹달샘', '대추나무사랑걸렸네', '게스트하우스', 
+// '레이크힐'];
+// var pentionList05 = ['플로라', '멀리가는향기', '은가비', '리버빌', '남이섬옹달샘', '대추나무사랑걸렸네', '게스트하우스', 
+// '레이크힐'];
 
+var pentionList = [
+    {
+        region : '가평',
+        name :  ['플로라', '멀리가는향기', '은가비', '리버빌', '남이섬옹달샘', '대추나무사랑걸렸네', '게스트하우스', 
+                '레이크힐', '힐스토리', ' 아델하임', '모닝']
+    },
+    {
+        region : '남이섬',
+        name : ['플로라', '멀리가는향기', '은가비', '리버빌', '남이섬옹달샘', '대추나무사랑걸렸네', '게스트하우스', 
+        '레이크힐', '힐스토리', ' 아델하임']
+    },
+    {
+        region : '청평',
+        name : ['플로라', '멀리가는향기', '은가비', '리버빌', '남이섬옹달샘', '대추나무사랑걸렸네']
+    },
+    {
+        region : '양평',
+        name : ['플로라', '멀리가는향기', '은가비', '리버빌', '남이섬옹달샘', '대추나무사랑걸렸네', '게스트하우스', 
+        '레이크힐']
+    },
+    {
+        region : '기타',
+        name : ['플로라', '멀리가는향기', '은가비', '리버빌', '남이섬옹달샘', '대추나무사랑걸렸네', '게스트하우스', 
+        '레이크힐']
+    }
+];
 
+// var pentionName = pentionList.name;
+// var pentionRegion = pentionList.region;
 //var pentionMenu = document.getElementsByClassName('hover-menu');
+
+var pentionLength = Object.keys(pentionList);
+
+// console.log(pentionLength);
+
+// console.log(pentionList[1].name);
+// var tt = pentionList[1].name;
+// console.log(tt);
+
+// for (var i = 0; i < pentionLength.length; i++) {
+//     var pentionnameList = pentionList[i].name;
+//     console.log(pentionnameList);
+// }
+
+
+
+for (var i = 0; i < pentionLength.length; i++) {
+    var r = pentionList[i].region;
+    var n = pentionList[i].name;
+    console.log(r);
+    console.log(n);
+    document.getElementById('hoverMenu01').innerHTML += '<dt>' +r+ '</dt>' + '<dd>' + '<a href="#">' + '<span class="pentionName">' +n+ '</span>' + '</a>' + '</dd>';
+};
+
 var addList = '';
 var addRegion = '';
 // var adddt = document.createElement('dt');
 // var adddtText = document.createTextNode('가평');
 
-for (i = 0 ; i < pentionList01.length ; i++) {
-    /*var dd = '<dd>'+pentionList01[i]+'</dd>';
-    document.getElementById('hoverMenu01').innerHTML = dd;*/
-    addList += '<dd>' + '<a href="#">' + '<span class="pentionName">' + pentionList01[i] + '</span>' + '</a>' + '</dd>';
-};
+// for (i = 0 ; i < pentionName.length; i++) {
+//     /*var dd = '<dd>'+pentionList01[i]+'</dd>';
+//     document.getElementById('hoverMenu01').innerHTML = dd;*/
+//     addList += '<dd>' + '<a href="#">' + '<span class="pentionName">' + pentionName[i] + '</span>' + '</a>' + '</dd>';
+// };
 
-for (i = 0; i <regionList01.length; i++) {
-    addRegion += '<dt>' +regionList01[i]+ '</dt>';
-};
+// for (i = 0; i < pentionRegion.length; i++) {
+//     addRegion += '<dt>' +pentionRegion[i]+ '</dt>';
+// };
 
 
-// document.getElementById('hoverMenu01').innerHTML = addRegion;
+// document.getElementById('hoverMenu01').innerHTML = addRegion + addList;
 // document.getElementById('hoverMenu01').innerHTML = addList; // 이게 없으면 dt가 나옴..
 
 /*
@@ -103,13 +162,30 @@ dtitle.appendChild(dtNode);
 */
 
 
-const Pention1 = {
-    region : '<dt>' + regionList01[0] + '</dt>',
-    pentionName : addList 
-};
+// const Pention1 = {
+//     region : '<dt>' + regionList01[0] + '</dt>',
+//     pentionName : addList 
+// };
 
-document.getElementById('hoverMenu01').innerHTML = Pention1.region + Pention1.pentionName;
+// const Pention2 = {
+//     region : '<dt>' + regionList01[1] + '</dt>',
+//     pentionName : addList 
+// };
+
+// const Pention3 = {
+//     region : '<dt>' + regionList01[2] + '</dt>',
+//     pentionName : addList 
+// };
+
+// const Pention4 = {
+//     region : '<dt>' + regionList01[3] + '</dt>',
+//     pentionName : addList 
+// };
+
+// const Pention5 = {
+//     region : '<dt>' + regionList01[4] + '</dt>',
+//     pentionName : addList 
+// };
+
+// document.getElementById('hoverMenu01').innerHTML = Pention1.region + Pention1.pentionName;
 // document.getElementById('hoverMenu01').innerHTML = Pention1.pentionName;
-
-var New = '<span class="r-mark"><img src="../img/header/r-mark.png" alt="renew"></span>';
-

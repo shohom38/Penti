@@ -80,12 +80,12 @@ var pentionList = [
     {
         region : '가평',
         name :  ['플로라', '멀리가는향기', '은가비', '리버빌', '남이섬옹달샘', '대추나무사랑걸렸네', '게스트하우스', 
-                '레이크힐', '힐스토리', ' 아델하임', '모닝']
+                '레이크힐', '힐스토리', '아델하임', '모닝']
     },
     {
         region : '남이섬',
         name : ['플로라', '멀리가는향기', '은가비', '리버빌', '남이섬옹달샘', '대추나무사랑걸렸네', '게스트하우스', 
-        '레이크힐', '힐스토리', ' 아델하임']
+        '레이크힐', '힐스토리', '아델하임']
     },
     {
         region : '청평',
@@ -108,7 +108,7 @@ var pentionList = [
 //var pentionMenu = document.getElementsByClassName('hover-menu');
 
 var pentionLength = Object.keys(pentionList);
-
+var pentionName = pentionList.name;
 // console.log(pentionLength);
 
 // console.log(pentionList[1].name);
@@ -124,10 +124,16 @@ var pentionLength = Object.keys(pentionList);
 
 for (var i = 0; i < pentionLength.length; i++) {
     var r = pentionList[i].region;
-    var n = pentionList[i].name;
-    console.log(r);
-    console.log(n);
-    document.getElementById('hoverMenu01').innerHTML += '<dt>' +r+ '</dt>' + '<dd>' + '<a href="#">' + '<span class="pentionName">' +n+ '</span>' + '</a>' + '</dd>';
+    var n = pentionList[i];
+    var innerdt = '<dt>' +r+ '</dt>';
+    // console.log(r);
+    // console.log(n);
+    document.getElementById('hoverMenu01').innerHTML += innerdt;       
+    pentionList.forEach(element => {
+        var innerdd = '<dd>' + n.name + '</dd>';
+        document.getElementById('hoverMenu01').innerHTML += innerdd;
+        console.log(element); 
+    });
 };
 
 var addList = '';

@@ -108,9 +108,11 @@ var pentionList = [
 //var pentionMenu = document.getElementsByClassName('hover-menu');
 
 var pentionLength = Object.keys(pentionList);
-var pentionName = pentionList.name;
+var pentionNameL = Object.values(pentionList);
+var pentionName = pentionList[1].name;
+// console.log(pentionName);
+// document.write(pentionName);
 // console.log(pentionLength);
-
 // console.log(pentionList[1].name);
 // var tt = pentionList[1].name;
 // console.log(tt);
@@ -119,21 +121,21 @@ var pentionName = pentionList.name;
 //     var pentionnameList = pentionList[i].name;
 //     console.log(pentionnameList);
 // }
-
-
-
+console.log(pentionName.length);
+console.log(pentionLength.length);
+console.log(pentionNameL.length);
 for (var i = 0; i < pentionLength.length; i++) {
-    var r = pentionList[i].region;
-    var n = pentionList[i];
-    var innerdt = '<dt>' +r+ '</dt>';
     // console.log(r);
     // console.log(n);
-    document.getElementById('hoverMenu01').innerHTML += innerdt;       
-    pentionList.forEach(element => {
-        var innerdd = '<dd>' + n.name + '</dd>';
-        document.getElementById('hoverMenu01').innerHTML += innerdd;
-        console.log(element); 
-    });
+    // document.getElementById('hoverMenu0'+(i+1)).innerHTML += innerdt;
+    for (var j = 0; j < pentionNameL.length; j++) {
+        var r = pentionList[i].region;
+        var innerdt = '<dt>' +r+ '</dt>';
+        console.log(pentionNameL.length);
+        var n = pentionList[j].name;
+        var innerdd = '<dd>' + n + '</dd>';
+        document.getElementById('hoverMenu0'+(j+1)).innerHTML += innerdd;
+    };
 };
 
 var addList = '';

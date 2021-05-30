@@ -79,26 +79,26 @@ console.log(spanHour.length);*/
 var pentionList = [
     {
         region : '가평',
-        name :  ['플로라', '멀리가는향기', '은가비', '리버빌', '남이섬옹달샘', '대추나무사랑걸렸네', '게스트하우스', 
+        name :  ['플로라', '옹달샘', '플로라', '플로라', '옹달샘', '대추나무사랑걸렸네', '게스트하우스', 
                 '레이크힐', '힐스토리', '아델하임', '모닝']
     },
     {
         region : '남이섬',
-        name : ['플로라', '멀리가는향기', '은가비', '리버빌', '남이섬옹달샘', '대추나무사랑걸렸네', '게스트하우스', 
+        name : ['플로라', '옹달샘', '플로라', '옹닰햄', '남이섬옹달샘', '대추나무사랑걸렸네', '게스트하우스', 
         '레이크힐', '힐스토리', '아델하임']
     },
     {
         region : '청평',
-        name : ['플로라', '멀리가는향기', '은가비', '리버빌', '남이섬옹달샘', '대추나무사랑걸렸네']
+        name : ['플로라', '플로라', '옹달샘', '리버빌', '남이섬옹달샘', '대추나무사랑걸렸네']
     },
     {
         region : '양평',
-        name : ['플로라', '멀리가는향기', '은가비', '리버빌', '남이섬옹달샘', '대추나무사랑걸렸네', '게스트하우스', 
+        name : ['플로라', '플로라', '은가비', '리버빌', '남이섬옹달샘', '대추나무사랑걸렸네', '게스트하우스', 
         '레이크힐']
     },
     {
         region : '기타',
-        name : ['플로라', '멀리가는향기', '은가비', '리버빌', '남이섬옹달샘', '대추나무사랑걸렸네', '게스트하우스', 
+        name : ['플로라', '플로라', '은가비', '리버빌', '남이섬옹달샘', '대추나무사랑걸렸네', '게스트하우스', 
         '레이크힐']
     }
 ];
@@ -109,8 +109,9 @@ var pentionList = [
 
 var pentionLength = Object.keys(pentionList);
 var pentionNameL = Object.values(pentionList);
-var pentionName = pentionList[1].name;
-// console.log(pentionName);
+var pentionName = pentionList[0].name;
+console.log(pentionName);
+console.log(pentionNameL);
 // document.write(pentionName);
 // console.log(pentionLength);
 // console.log(pentionList[1].name);
@@ -121,20 +122,24 @@ var pentionName = pentionList[1].name;
 //     var pentionnameList = pentionList[i].name;
 //     console.log(pentionnameList);
 // }
-console.log(pentionName.length);
-console.log(pentionLength.length);
-console.log(pentionNameL.length);
+// console.log(pentionName.length);
+// console.log(pentionLength.length);
+// console.log(pentionNameL.length);
 for (var i = 0; i < pentionLength.length; i++) {
     // console.log(r);
     // console.log(n);
-    // document.getElementById('hoverMenu0'+(i+1)).innerHTML += innerdt;
-    for (var j = 0; j < pentionNameL.length; j++) {
-        var r = pentionList[i].region;
-        var innerdt = '<dt>' +r+ '</dt>';
-        console.log(pentionNameL.length);
+    // var obj_key = Object.keys(pentionList);
+    // var obj_val = pentionList[obj_key];
+    // console.log(obj_val);
+    for (var j = 0; j < pentionList.length; j++) {
+        // var r = pentionList[i].region;
+        // var innerdt = '<dt>' +r+ '</dt>';
         var n = pentionList[j].name;
-        var innerdd = '<dd>' + n + '</dd>';
+        console.log(n); 
+        var innerdd = '<dd>' + n[j] + '</dd>';
+        console.log(innerdd);
         document.getElementById('hoverMenu0'+(j+1)).innerHTML += innerdd;
+        // document.getElementById('hoverMenu0'+(i+1)).innerHTML += innerdt;
     };
 };
 

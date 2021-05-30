@@ -35,7 +35,7 @@ for (var i = 0; i < pentionLength.length; i++) {
     var t3 = pentionList[i].region;
     var t4 = pentionList[i].name;
     console.log(t3+'<br/>'+t4);
-    document.write(t3+ '<br/>' +t4 + '<br/>');
+    document.write('<dt>' + t3 + '</dt>' + '<dd>' +t4[i]+ '</dd>');
 };
 
 // var pentionName = pentionList.name;

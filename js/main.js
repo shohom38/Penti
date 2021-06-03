@@ -125,20 +125,20 @@ console.log(pentionNameL);
 // console.log(pentionName.length);
 // console.log(pentionLength.length);
 // console.log(pentionNameL.length);
-for (var i = 0; i < pentionLength.length; i++) {
+for (var i = 0; i < pentionList[i].name.length; i++) {
     // console.log(r);
     // console.log(n);
     // var obj_key = Object.keys(pentionList);
     // var obj_val = pentionList[obj_key];
     // console.log(obj_val);
-    for (var j = 0; j < pentionList.length; j++) {
+    for (var j = 0; j < pentionList[i].name.length; j++) {
         // var r = pentionList[i].region;
         // var innerdt = '<dt>' +r+ '</dt>';
-        var n = pentionList[j].name;
+        var n = pentionList[i].name;
         console.log(n); 
         var innerdd = '<dd>' + n[j] + '</dd>';
         console.log(innerdd);
-        document.getElementById('hoverMenu0'+(j+1)).innerHTML += innerdd;
+        document.getElementById('hoverMenu0'+(i+1)).innerHTML += innerdd;
         // document.getElementById('hoverMenu0'+(i+1)).innerHTML += innerdt;
     };
 };

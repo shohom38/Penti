@@ -131,15 +131,15 @@ for (var i = 0; i < pentionList[i].name.length; i++) {
     // var obj_key = Object.keys(pentionList);
     // var obj_val = pentionList[obj_key];
     // console.log(obj_val);
+    // var r = pentionList[i].region;
+    var innerdt = '<dt>' +r+ '</dt>';
+    document.getElementById('hoverMenu0'+(i+1)).innerHTML += innerdt;
     for (var j = 0; j < pentionList[i].name.length; j++) {
-        // var r = pentionList[i].region;
-        // var innerdt = '<dt>' +r+ '</dt>';
         var n = pentionList[i].name;
         console.log(n); 
         var innerdd = '<dd>' + n[j] + '</dd>';
         console.log(innerdd);
         document.getElementById('hoverMenu0'+(i+1)).innerHTML += innerdd;
-        // document.getElementById('hoverMenu0'+(i+1)).innerHTML += innerdt;
     };
 };
 

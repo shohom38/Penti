@@ -305,6 +305,9 @@ for (var i = 0; i < pentionList.length; i++) {
 };
 //ver3
 
+var tabSet = document.querySelectorAll('.top-menu-wrap .tab_list li');
+for (var i = 0; i < tabSet.length; i++)
+
 var addList = '';
 var addRegion = '';
 // var adddt = document.createElement('dt');

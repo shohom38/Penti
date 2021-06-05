@@ -103,21 +103,26 @@ var pentiInfo = {
 };
 
 // console.log(pentiInfo);
-console.log(pentiInfo.pentionInfo.Gyeonggi);
+console.log(pentiInfo.pentionInfo.Gyeongsang.region[0]);
+console.log(pentiInfo.pentionInfo.Gyeongsang.pentionStatus.pentionName[0]);
 
-var pentionList = pentiInfo;
+var pentionList = pentiInfo.pentionInfo.Gyeongsang.region;
+var pentionArr = pentiInfo.pentionInfo.Gyeongsang.pentionStatus.pentionName;
 
-for (var i = 0; i < pentionList[i].name.length; i++) {
-    // console.log(r);
-    // console.log(n);
-    // var obj_key = Object.keys(pentionList);
-    // var obj_val = pentionList[obj_key];
-    // console.log(obj_val);
-    // var r = pentionList[i].region;
+console.log(pentionList.length)
+
+for (var i = 0; i < pentionList.length; i++) {
+    var r = pentionList[i];
+    var innerdt = '<dt>' +r+ '</dt>';
+    document.write(innerdt)
+};
+
+for (var i = 0; i < pentionList.length; i++) {
+    var r = pentionList[i];
     var innerdt = '<dt>' +r+ '</dt>';
     document.getElementById('hoverMenu0'+(i+1)).innerHTML += innerdt;
-    for (var j = 0; j < pentionList[i].name.length; j++) {
-        var n = pentionList[i].name;
+    for (var j = 0; j < pentionArr.length; j++) {
+        var n = pentionArr;
         console.log(n); 
         var innerdd = '<dd>' + n[j] + '</dd>';
         console.log(innerdd);

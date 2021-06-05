@@ -68,6 +68,14 @@ h1 > a {
     background: url('../img/header/week-list.png') left 0 no-repeat;
 }
 
+.top-menu-wrap .tab-list .hover-position {
+    display: none;
+}
+
+.top-menu-wrap .tab-list .on .hover-position {
+    display: block;
+}
+
 .n-mark {
     margin-left: 5px;
 }
@@ -290,3 +298,4 @@ button {
 .menu-list-btn {
     display: none;
 }
+

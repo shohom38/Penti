@@ -288,6 +288,20 @@ console.log(pentionList.length)
 
 //ver2
 
+
+var tabSet = document.querySelectorAll('.top-menu-wrap .tab-list li');
+console.log(tabSet);
+for (var i = 0; i < tabSet.length; i++) {
+    tabSet[i].querySelector('.tab-btn').addEventListener('click',
+    function(t){
+        t.preventDefault();
+        for(var j = 0; j < tabSet.length; j++) {
+            tabSet[j].classList.remove('on');
+        }
+        this.parentNode.classList.add('on');
+    });
+}
+
 //ver3
 
 for (var i = 0; i < pentionList.length; i++) {
@@ -304,9 +318,6 @@ for (var i = 0; i < pentionList.length; i++) {
     };
 };
 //ver3
-
-var tabSet = document.querySelectorAll('.top-menu-wrap .tab_list li');
-for (var i = 0; i < tabSet.length; i++)
 
 var addList = '';
 var addRegion = '';

@@ -59,17 +59,22 @@
     float: left;
     width: 104px;
     text-align: center;
-    position: relative;
 }
 
 .top-menu-wrap > ul > li:hover .hover-position {
     visibility: visible;
 }
 
-.top-menu-wrap > ul > li > span {
+.top-menu-wrap > ul > li > .balloon_wrap {
+    position: relative;
+    top: -39px;
+    width: 104px;
+}
+
+.top-menu-wrap > ul > li > .balloon_wrap > span {
     position: absolute;
     top: -19px;
-    left: 30px;
+    left: 32px;
     background: url('../img/header/spch-bubl-up.png'), url('../img/header/spch-bubl-up.png');
     background-repeat: no-repeat, no-repeat;
     background-position: left 0, right 0, left 0;
@@ -79,6 +84,7 @@
     line-height: 25px;
     padding-right: 3px;
     color: #ffffff;
+    z-index: 10;
 }
 
 .top-menu-wrap > ul > li + li {
@@ -99,8 +105,8 @@
 
 .hover-position {
     width: 1000px;
-    position: relative;
-    left: -235px;
+    position: absolute;
+    left: -110px;
     padding-top: 6px;
     background: url('../img/header/hover-list-top-line.png') left top repeat-x;
 }

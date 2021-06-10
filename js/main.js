@@ -265,12 +265,12 @@ var pentionList = pentiInfo.pentionInfo.Weekend.region;
 var pentionArr = pentiInfo.pentionInfo.Weekend.pentionStatus.pentionName;
 
 console.log(pentionList.length)
-
+console.log(pentionD.length);
 
 // for (var u = 0; u < pentionD.length; u++) {
 //     var d = pentionD[u];
 //     var inneradr = '<a>' +d+ '</a>';
-//     document.getElementById('district0'+(u)).innerHTML += inneradr;
+//     document.getElementById('district0'+[u]).innerHTML += inneradr;
 //     for (var i = 0; i < pentionList.length; i++) {
 //         var r = pentionList[i];
 //         var innerdt = '<dt>' +r+ '</dt>';
@@ -304,19 +304,19 @@ for (var i = 0; i < tabSet.length; i++) {
 
 //ver3
 
-for (var i = 0; i < pentionList.length; i++) {
-    var r = pentionList[i];
-    var innerdt = '<dt>' +r+ '</dt>';
-    document.getElementById('hoverMenu0'+(i+1)).innerHTML += innerdt;
-    for (var j = 0; j < pentionArr[i].length; j++) {
-        var n = pentionArr[i][j];
-        console.log(n); 
-        var innerdd = '<dd>' + n + '</dd>';
-        console.log(innerdd);
-        // console.log(pentionArr[i]);
-        document.getElementById('hoverMenu0'+(i+1)).innerHTML += innerdd;
-    };
-};
+// for (var i = 0; i < pentionList.length; i++) {
+//     var r = pentionList[i];
+//     var innerdt = '<dt>' +r+ '</dt>';
+//     document.getElementById('hoverMenu0'+(i+1)).innerHTML += innerdt;
+//     for (var j = 0; j < pentionArr[i].length; j++) {
+//         var n = pentionArr[i][j];
+//         console.log(n); 
+//         var innerdd = '<dd>' + n + '</dd>';
+//         console.log(innerdd);
+//         // console.log(pentionArr[i]);
+//         document.getElementById('hoverMenu0'+(i+1)).innerHTML += innerdd;
+//     };
+// };
 //ver3
 
 var addList = '';

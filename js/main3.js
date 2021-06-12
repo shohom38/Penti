@@ -90,7 +90,9 @@ var allDistrict = {
             newOpen: false,
             remodel: false
         }
-    }
+    },
+    district2: 
+    
 }
 
 console.log(allDistrict.region3.pention1);

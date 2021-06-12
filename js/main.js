@@ -257,15 +257,18 @@ var pentiInfo = {
 
 //ver2
 
-console.log(pentiInfo.pentionInfo.Gyeongsang.region[0]);
-console.log(pentiInfo.pentionInfo.Gyeongsang.pentionStatus.pentionName[0]);
+// console.log(pentiInfo.pentionInfo.Gyeongsang.region[0]);
+// console.log(pentiInfo.pentionInfo.Gyeongsang.pentionStatus.pentionName[0]);
 
 var pentionD = pentiInfo.pentionInfo.distict;
 var pentionList = pentiInfo.pentionInfo.Weekend.region;
 var pentionArr = pentiInfo.pentionInfo.Weekend.pentionStatus.pentionName;
 
-console.log(pentionList.length)
-console.log(pentionD.length);
+// console.log(pentionList.length)
+// console.log(pentionD.length);
+
+var keyarr = Object.keys(pentiInfo.pentionInfo);
+console.log(keyarr.length);
 
 // for (var u = 0; u < pentionD.length; u++) {
 //     var d = pentionD[u];
@@ -304,19 +307,19 @@ for (var i = 0; i < tabSet.length; i++) {
 
 //ver3
 
-// for (var i = 0; i < pentionList.length; i++) {
-//     var r = pentionList[i];
-//     var innerdt = '<dt>' +r+ '</dt>';
-//     document.getElementById('hoverMenu0'+(i+1)).innerHTML += innerdt;
-//     for (var j = 0; j < pentionArr[i].length; j++) {
-//         var n = pentionArr[i][j];
-//         console.log(n); 
-//         var innerdd = '<dd>' + n + '</dd>';
-//         console.log(innerdd);
-//         // console.log(pentionArr[i]);
-//         document.getElementById('hoverMenu0'+(i+1)).innerHTML += innerdd;
-//     };
-// };
+for (var i = 0; i < pentionList.length; i++) {
+    var r = pentionList[i];
+    var innerdt = '<dt>' +r+ '</dt>';
+    document.getElementById('hoverMenu0'+i+'-'+i).innerHTML += innerdt;
+    for (var j = 0; j < pentionArr[i].length; j++) {
+        var n = pentionArr[i][j];
+        console.log(n); 
+        var innerdd = '<dd>' + n + '</dd>';
+        console.log(innerdd);
+        // console.log(pentionArr[i]);
+        document.getElementById('hoverMenu0'+i+'-'+i).innerHTML += innerdd;
+    };
+};
 //ver3
 
 var addList = '';

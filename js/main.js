@@ -1667,38 +1667,56 @@ console.log(pentionList.length);
 //     };
 // };
 
+var tabSet = document.querySelectorAll('.top-menu-wrap .tab-list li');
+var tabList = document.querySelector('.top-menu-wrap .tab-list');
+console.log(tabSet);
+console.log(tabList);
+
+var curNav = document.querySelector('.top-menu-wrap .tab-list li.on');
+
+tabList.addEventListener('click', (e) => {
+    if (e.target.classNmae === "tab-btn") {
+        console.log(e, "E");
+        curNav.classList.remove('on');
+        const curLi = e.target.parentElement;
+        console.log(curLi);
+        curLi.classList.add('on');
+        curNav = curLi;
+    }
+})
+
 //ver2
 
 
-var tabSet = document.querySelectorAll('.top-menu-wrap .tab-list li');
-console.log(tabSet);
-for (var i = 0; i < tabSet.length; i++) {
-    tabSet[i].querySelector('.tab-btn').addEventListener('click',
-    function(t){
-        t.preventDefault();
-        for(var j = 0; j < tabSet.length; j++) {
-            tabSet[j].classList.remove('on');
-        }
-        this.parentNode.classList.add('on');
-    });
-}
+// var tabSet = document.querySelectorAll('.top-menu-wrap .tab-list li');
+// console.log(tabSet);
+// for (var i = 0; i < tabSet.length; i++) {
+//     tabSet[i].querySelector('.tab-btn').addEventListener('click',
+//     function(t){
+//         t.preventDefault();
+//         for(var j = 0; j < tabSet.length; j++) {
+//             tabSet[j].classList.remove('on');
+//         }
+//         this.parentNode.classList.add('on');
+//     });
+// }
 
 //ver3
 
-console.log(pentionList[0].region);
+// console.log(pentionList[0].region);
 
 for (var i = 0; i < pentionList[i].region.length; i++) {
     var r = pentionList[0].region[i].regName;
-    console.log(pentionList[i]);
+    // console.log(pentionList[i]);
     var innerdt = '<dt>' +r+ '</dt>';
     document.getElementById('hoverMenu0'+0+'-'+i).innerHTML += innerdt;
 
     for (var j = 0; j < pentionList[i].region[i].pentionG.length; j++) {
-        console.log(pentionList[i].region[i].pentionG.length);
+        // console.log(pentionList[i].region[i].pentionG.length);
         var n = pentionList[i].region[i].pentionG[j].pentionName;
-        console.log(n); 
+        // console.log(n); 
         var innerdd = '<dd>' + n + '</dd>';
-        console.log(innerdd);
+        // console.log(innerdd);
         // console.log(pentionArr[i]);
         document.getElementById('hoverMenu0'+0+'-'+i).innerHTML += innerdd;
     };

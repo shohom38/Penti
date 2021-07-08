@@ -1714,12 +1714,19 @@ for(var k = 0; k < 2; k++) {
 }
 
 // console.log(pentionList[0].length);
+// console.log(pentionList.length);
 for(var i = 0; i < pentionList.length; i++) {
     console.log(pentionList.length);
     for(var j = 0; j < pentionList[j].region.length; j++) {
-        console.log(pentionList[i].region[j]);
+        console.log(pentionList[i].region.length);
         document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dt>' + pentionList[i].region[j].regName + '</dt>';
-        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + pentionList[i].region[j].pentionG[j].pentionName + '</dt>';
+        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + pentionList[i].region[j].pentionG[0].pentionName + '</dd>';
+        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + pentionList[i].region[j].pentionG[1].pentionName + '</dd>';
+        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + pentionList[i].region[j].pentionG[2].pentionName + '</dd>';
+        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + pentionList[i].region[j].pentionG[3].pentionName + '</dd>';
+        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + pentionList[i].region[j].pentionG[4].pentionName + '</dd>';
+        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + pentionList[i].region[j].pentionG[5].pentionName + '</dd>';
+        // document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + pentionList[i].region[j].pentionG[6].pentionName + '</dd>';
     }
 }
 

@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function() {
+    openState();
+});
+
 /*
 var dls = document.getElementsByClassName('hover-menu');
 var underline = document.querySelectorAll('.pentionName');
@@ -880,7 +884,7 @@ var pentionList = [
                         newOpen: false
                     },
                     {
-                        pentionName: '푸른하늘',
+                        pentionName: '랜더믹',
                         reOpen: true,
                         newOpen: false
                     },
@@ -945,7 +949,7 @@ var pentionList = [
                 regName: '기타',
                 pentionG: [
                     {
-                        pentionName: '대추나무사랑걸렸네',
+                        pentionName: '오롯이',
                         reOpen: true,
                         newOpen: false
                     },
@@ -1041,7 +1045,7 @@ var pentionList = [
                         newOpen: false
                     },
                     {
-                        pentionName: '고요한아침',
+                        pentionName: '밝은새벽',
                         reOpen: true,
                         newOpen: false
                     },
@@ -1091,7 +1095,7 @@ var pentionList = [
                         newOpen: false
                     },
                     {
-                        pentionName: '푸른하늘',
+                        pentionName: '오동통',
                         reOpen: true,
                         newOpen: false
                     },
@@ -1171,7 +1175,7 @@ var pentionList = [
                         newOpen: false
                     },
                     {
-                        pentionName: '푸른하늘',
+                        pentionName: '폴라베어',
                         reOpen: true,
                         newOpen: false
                     },
@@ -1272,7 +1276,7 @@ var pentionList = [
                         newOpen: false
                     },
                     {
-                        pentionName: '플라밍고',
+                        pentionName: '폴라리스',
                         reOpen: true,
                         newOpen: false
                     },
@@ -1382,7 +1386,7 @@ var pentionList = [
                         newOpen: false
                     },
                     {
-                        pentionName: '푸른하늘',
+                        pentionName: '알음다운펜션',
                         reOpen: true,
                         newOpen: false
                     },
@@ -1558,7 +1562,7 @@ var pentionList = [
                         newOpen: false
                     },
                     {
-                        pentionName: '푸른하늘',
+                        pentionName: '코로나',
                         reOpen: true,
                         newOpen: false
                     },
@@ -1598,7 +1602,7 @@ var pentionList = [
                         newOpen: false
                     },
                     {
-                        pentionName: '푸른하늘',
+                        pentionName: '우직한',
                         reOpen: true,
                         newOpen: false
                     },
@@ -1720,12 +1724,12 @@ for(var i = 0; i < pentionList.length; i++) {
     for(var j = 0; j < pentionList[j].region.length; j++) {
         console.log(pentionList[i].region.length);
         document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dt>' + pentionList[i].region[j].regName + '</dt>';
-        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + pentionList[i].region[j].pentionG[0].pentionName + '</dd>';
-        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + pentionList[i].region[j].pentionG[1].pentionName + '</dd>';
-        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + pentionList[i].region[j].pentionG[2].pentionName + '</dd>';
-        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + pentionList[i].region[j].pentionG[3].pentionName + '</dd>';
-        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + pentionList[i].region[j].pentionG[4].pentionName + '</dd>';
-        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + pentionList[i].region[j].pentionG[5].pentionName + '</dd>';
+        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + '<a href="#">' + '<span class="pentionName">' + pentionList[i].region[j].pentionG[0].pentionName + '</span>' + '</a>' + '</dd>';
+        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + '<a href="#">' + '<span class="pentionName">' + pentionList[i].region[j].pentionG[1].pentionName + '</span>' + '</a>' + '</dd>';
+        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + '<a href="#">' + '<span class="pentionName">' + pentionList[i].region[j].pentionG[2].pentionName + '</span>' + '</a>' + '</dd>';
+        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + '<a href="#">' + '<span class="pentionName">' + pentionList[i].region[j].pentionG[3].pentionName + '</span>' + '</a>' + '</dd>';
+        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + '<a href="#">' + '<span class="pentionName">' + pentionList[i].region[j].pentionG[4].pentionName + '</span>' + '</a>' + '</dd>';
+        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + '<a href="#">' + '<span class="pentionName">' + pentionList[i].region[j].pentionG[5].pentionName + '</span>' + '</a>' + '</dd>';
         // document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + pentionList[i].region[j].pentionG[6].pentionName + '</dd>';
     }
 }
@@ -1738,8 +1742,21 @@ var pentiName = pentionInfo[0][0].pentionG[0].pentionName;
 console.log(pentionInfo);
 
 // console.log(pentionList[0].region[0].pentionG);
-
-
+var checkOpen;
+console.log(pentionList[1].district);
+for(var i = 0; i < pentionList.length; i++) {
+    checkOpen = pentionList[i].region[i].pentionG[i].reOpen;
+    console.log(pentionList[i].region[i].pentionG[i].reOpen);
+}
+function openState() {
+    if(checkOpen === true) {
+        for(var i = 0; i < pentionList.length; i++) {
+            var mother = document.getElementById('hoverMenu01-' + i);
+            var child = mother.childNodes;
+            console.log(child);
+        }
+    }
+}
 // for (var i = 0; i < pentionList[i].region.length; i++) {
 //     var r = pentionList[i].region[i].regName;
 //     // console.log(pentionList[i]);

@@ -1724,12 +1724,9 @@ for(var i = 0; i < pentionList.length; i++) {
     for(var j = 0; j < pentionList[j].region.length; j++) {
         console.log(pentionList[i].region.length);
         document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dt>' + pentionList[i].region[j].regName + '</dt>';
-        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + '<a href="#" class="ddA">' + '<span class="pentionName">' + pentionList[i].region[j].pentionG[0].pentionName + '</span>' + '</a>' + '</dd>';
-        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + '<a href="#" class="ddA">' + '<span class="pentionName">' + pentionList[i].region[j].pentionG[1].pentionName + '</span>' + '</a>' + '</dd>';
-        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + '<a href="#" class="ddA">' + '<span class="pentionName">' + pentionList[i].region[j].pentionG[2].pentionName + '</span>' + '</a>' + '</dd>';
-        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + '<a href="#" class="ddA">' + '<span class="pentionName">' + pentionList[i].region[j].pentionG[3].pentionName + '</span>' + '</a>' + '</dd>';
-        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + '<a href="#" class="ddA">' + '<span class="pentionName">' + pentionList[i].region[j].pentionG[4].pentionName + '</span>' + '</a>' + '</dd>';
-        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + '<a href="#" class="ddA">' + '<span class="pentionName">' + pentionList[i].region[j].pentionG[5].pentionName + '</span>' + '</a>' + '</dd>';
+        for(var k = 0; k < pentionList[i].region[j].pentionG.length; k++) {
+            document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + '<a href="#" class="ddA">' + '<span class="pentionName">' + pentionList[i].region[j].pentionG[k].pentionName + '</span>' + '</a>' + '</dd>';
+        }
         // document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + pentionList[i].region[j].pentionG[6].pentionName + '</dd>';
     }
 }
@@ -1752,7 +1749,7 @@ function openState() {
     if(checkOpen === true) {
         for(var i = 0; i < 1; i++) {
             var ddA = document.querySelector('.ddA');
-            // console.log(ddA);
+            console.log(ddA);
             ddA.innerHTML += '<span class="r-mark">' + '<img src="../img/header/r-mark.png" alt="new">' + '</span>';
             // var openSpan = document.createElement('span');
             // console.log(openSpan);

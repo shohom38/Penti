@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    openState();
+    // openState();
 });
 
 /*
@@ -1719,16 +1719,49 @@ for(var k = 0; k < 2; k++) {
 
 // console.log(pentionList[0].length);
 // console.log(pentionList.length);
-for(var i = 0; i < pentionList.length; i++) {
-    console.log(pentionList.length);
-    for(var j = 0; j < pentionList[j].region.length; j++) {
-        console.log(pentionList[i].region.length);
+// for(var i = 0; i < pentionList.length; i++) {
+//     console.log(pentionList.length);
+//     for(var j = 0; j < pentionList[j].region.length; j++) {
+//         console.log(pentionList[i].region.length);
+//         document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dt>' + pentionList[i].region[j].regName + '</dt>';
+//         for(var k = 0; k < pentionList[i].region[j].pentionG.length; k++) {
+//             document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + '<a href="#" class="ddA">' + '<span class="pentionName">' + pentionList[i].region[j].pentionG[k].pentionName + '</span>' + '</a>' + '</dd>';
+//         }
+//         // document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + pentionList[i].region[j].pentionG[6].pentionName + '</dd>';
+//     }
+// }
+
+//////////////
+// foreach //
+/////////////
+
+// pentionList.forEach((item, i) => {
+//     // console.log(e, i, a);
+//     console.log(i);
+//     item.region.forEach((item2, j) => {
+//         console.log(item2, "j");
+//         document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dt>' + item2.regName + '</dt>';
+//         item2.pentionG.forEach((item3, k) => {
+//             console.log(item3, "k");
+//             document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + '<a href="#" class="ddA">' + '<span class="pentionName">' + item3.pentionName + '</span>' + '</a>' + '</dd>';
+//         });
+//     });
+// });
+
+////////////
+// for~in //
+////////////
+
+for(let i in pentionList) {
+    for(let j in pentionList[i].region) {
+        console.log(i + ',' + j + ': ' + pentionList[i].region[j].regName);
         document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dt>' + pentionList[i].region[j].regName + '</dt>';
-        for(var k = 0; k < pentionList[i].region[j].pentionG.length; k++) {
+        for(let k in pentionList[i].region[j].pentionG) {
+            console.log(i + ',' + j + ',' + k + ': ' + pentionList[i].region[j].pentionG[k].pentionName);
             document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + '<a href="#" class="ddA">' + '<span class="pentionName">' + pentionList[i].region[j].pentionG[k].pentionName + '</span>' + '</a>' + '</dd>';
         }
-        // document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + pentionList[i].region[j].pentionG[6].pentionName + '</dd>';
     }
+
 }
 
 
@@ -1745,18 +1778,18 @@ for(var i = 0; i < pentionList.length; i++) {
     checkOpen = pentionList[i].region[1].pentionG[i].reOpen;
     console.log(pentionList[i].region[1].pentionG[i].reOpen);
 }
-function openState() {
-    if(checkOpen === true) {
-        for(var i = 0; i < 1; i++) {
-            var ddA = document.querySelector('.ddA');
-            console.log(ddA);
-            ddA.innerHTML += '<span class="r-mark">' + '<img src="../img/header/r-mark.png" alt="new">' + '</span>';
-            // var openSpan = document.createElement('span');
-            // console.log(openSpan);
-            // ddA.append(openSpan);
-        }
-    }
-}
+// function openState() {
+//     if(checkOpen === true) {
+//         for(var i = 0; i < 1; i++) {
+//             var ddA = document.querySelector('.ddA');
+//             console.log(ddA);
+//             ddA.innerHTML += '<span class="r-mark">' + '<img src="../img/header/r-mark.png" alt="new">' + '</span>';
+//             // var openSpan = document.createElement('span');
+//             // console.log(openSpan);
+//             // ddA.append(openSpan);
+//         }
+//     }
+// }
 // for (var i = 0; i < pentionList[i].region.length; i++) {
 //     var r = pentionList[i].region[i].regName;
 //     // console.log(pentionList[i]);

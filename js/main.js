@@ -1713,9 +1713,13 @@ tabList.addEventListener('click', (e) => {
 // console.log(pentionList[0].region);
 
 
-for(var k = 0; k < 2; k++) {
-    console.log(pentionList[k].region.length);
-}
+// for(var k = 0; k < 2; k++) {
+//     console.log(pentionList[k].region.length);
+// }
+
+/////////
+// for //
+/////////
 
 // console.log(pentionList[0].length);
 // console.log(pentionList.length);
@@ -1735,34 +1739,64 @@ for(var k = 0; k < 2; k++) {
 // foreach //
 /////////////
 
-// pentionList.forEach((item, i) => {
-//     // console.log(e, i, a);
-//     console.log(i);
-//     item.region.forEach((item2, j) => {
-//         console.log(item2, "j");
-//         document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dt>' + item2.regName + '</dt>';
-//         item2.pentionG.forEach((item3, k) => {
-//             console.log(item3, "k");
-//             document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + '<a href="#" class="ddA">' + '<span class="pentionName">' + item3.pentionName + '</span>' + '</a>' + '</dd>';
-//         });
-//     });
-// });
+pentionList.forEach((item, i) => {
+    // console.log(e, i, a);
+    console.log(i);
+    item.region.forEach((item2, j) => {
+        console.log(item2, "j");
+        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dt>' + item2.regName + '</dt>';
+        item2.pentionG.forEach((item3, k) => {
+            console.log(item3, "k");
+            document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + '<a href="#" class="ddA">' + '<span class="pentionName">' + item3.pentionName + '</span>' + '</a>' + '</dd>';
+        });
+    });
+});
 
 ////////////
 // for~in //
 ////////////
 
-for(let i in pentionList) {
-    for(let j in pentionList[i].region) {
-        console.log(i + ',' + j + ': ' + pentionList[i].region[j].regName);
-        document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dt>' + pentionList[i].region[j].regName + '</dt>';
-        for(let k in pentionList[i].region[j].pentionG) {
-            console.log(i + ',' + j + ',' + k + ': ' + pentionList[i].region[j].pentionG[k].pentionName);
-            document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + '<a href="#" class="ddA">' + '<span class="pentionName">' + pentionList[i].region[j].pentionG[k].pentionName + '</span>' + '</a>' + '</dd>';
-        }
-    }
+// for(let i in pentionList) {
+//     for(let j in pentionList[i].region) {
+//         console.log(i + ',' + j + ': ' + pentionList[i].region[j].regName);
+//         document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dt>' + pentionList[i].region[j].regName + '</dt>';
+//         for(let k in pentionList[i].region[j].pentionG) {
+//             console.log(i + ',' + j + ',' + k + ': ' + pentionList[i].region[j].pentionG[k].pentionName);
+//             document.getElementById('hoverMenu0'+i+'-'+j).innerHTML += '<dd>' + '<a href="#" class="ddA">' + '<span class="pentionName">' + pentionList[i].region[j].pentionG[k].pentionName + '</span>' + '</a>' + '</dd>';
+//         }
+//     }
 
-}
+// }
+
+////////////
+// for of //
+////////////
+
+// for (let items of pentionList) {
+//     console.log('for of : ' + items);
+// }
+
+
+///////////
+// while //
+///////////
+
+// var w = 0;
+// while(w < pentionList.length) {
+//     w++;
+//     var h = 0;
+//     while(h < pentionList[w].region.length) {
+//         document.getElementById('hoverMenu0'+w+'-'+h).innerHTML += '<dt>' + pentionList[w].region[h].regName + '</dt>';
+//         h++;
+//         var l = 0;
+//         while(l < pentionList[w].region[h].pentionG.length) {
+//             document.getElementById('hoverMenu0'+w+'-'+h).innerHTML += '<dd>' + '<a href="#" class="ddA">' + '<span class="pentionName">' + pentionList[w].region[h].pentionG[l].pentionName + '</span>' + '</a>' + '</dd>';
+//             l++;
+//         }
+//     }
+// }
+
+
 
 
 // var pentionNameInfo = pentionInfo.map(arr2 => arr2.pentionG);

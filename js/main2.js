@@ -114,7 +114,7 @@ console.log(pentionList.length)
 for (var i = 0; i < pentionList.length; i++) {
     var r = pentionList[i];
     var innerdt = '<dt>' +r+ '</dt>';
-    document.write(innerdt)
+    // document.write(innerdt)
 };
 
 for (var i = 0; i < pentionList.length; i++) {

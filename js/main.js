@@ -1682,11 +1682,11 @@ console.log(curNav);
 tabList.addEventListener('click', (e) => {
     // console.log(e);
     if (e.target.className === "tab-btn") {
-        console.log('HELLLLL')
-        console.log(e, "E");
+        // console.log('HELLLLL')
+        // console.log(e, "E");
         curNav.classList.remove('on');  
         const curLi = e.target.parentElement;
-        console.log(curLi);
+        // console.log(curLi);
         curLi.classList.add('on');
         curNav = curLi;
     }
